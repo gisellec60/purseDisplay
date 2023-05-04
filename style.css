@@ -28,13 +28,11 @@ h1 {
     text-shadow:3px 3px #4c61e6;
     font-size: 73px;
     line-height:5%;
-    
     height: 10px;
-   
     border: 2px;
     border-radius:12px;
     margin-left:100px;
-    top:-1050px;
+    top:-1055px;
       
 }
 
@@ -47,7 +45,7 @@ pre.sibling-element {
     line-height: 15px;
     color:rgb(28, 25, 25);
     top:97px;
-    left: 605px;
+    left: 305px;
     font-style: italic;
 }
 
@@ -59,7 +57,7 @@ div.square {
   padding:5px 25px 25px;
   border: 2px;
   margin-left:30px;
-  top:140px;
+  top:100px;
   font-weight:bolder;
  }
 
@@ -68,6 +66,7 @@ div.square {
   margin:3%;
   width:250px;
   border-radius:25px;
+  
 }
 
 .purseImage{
@@ -130,9 +129,18 @@ input[type=submit]:hover {
   padding: 20px;
   border-radius:25px;
   right: 50px;
-  
-}
 
+}
+#form-edit-container {
+  position:absolute;
+  border-radius: 5px;
+  background-color: #2a67ec;
+  padding: 20px;
+  border-radius:25px;
+  width:300px;
+  top:200px;
+  left:500px;
+}
 #submit, #price{
   width:80px
 }
@@ -151,5 +159,9 @@ input[type=submit]:hover {
   margin-left:30px;
   top:140px;
   font-weight:bolder;
-  
+  display:none
+}
+.square{
+  position:absolute;
+  top:150px;
 }
