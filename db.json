@@ -1,42 +1,41 @@
- { 
-    "purseData":
-    [
-        {
-            "brand": "Jimmy Choo",
-            "style": "Bucket",
-            "color": "pink",
-            "size": "small",
-            "img": "https://media.jimmychoo.com/image/upload/q_auto:best,f_auto,dpr_2.0,w_900,h_900,c_fit/USPROD_PRODUCT/images/original/BONBONBUCKETSHUT_112562_FRONT_vg04.jpg",
-            "condition": "new",
-            "price": 1200,
-            "comments": "Shiny calf leather,Leather and metal top handle,Drawstring closure,Interior pocket,Bag measures: L17 x H17.5 x W11cm, Adjustable and detachable leather strap measures: 47cm,Made in Italy,By purchasing this product, you are supporting sustainable leather manufacturing through the Leather Working Group",
-            "seller": "Margrett Thatcher",
-            "id": 1
-        },
-
-        {
-            "brand": "Coach",
-            "style": "Lori Shoulder Bag",
-            "color": "Brass/Canyon Multi",
-            "size": "Medium",
-            "img":"https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRvWaKEder8QK6uE_vCxZUbnB9wYzTiC0SK335iHYBsFwY5GSObnQdL66UbTLKs2wXPssbpaxA6u7GiCBeAXS4ilqrl0LtoecOv9eNvpdNwPLFo5nlgqicS1WDio9oKeB0mQg&usqp=CAc",
-            "condition": "new",
-            "price": 450,
-            "comments": "Soft pebble leather and suede Inside snap pocketCenter zip compartment,Magnetic snap closure,fabric lining,Adjustable handles with 11\" drop, Outside zip pocket, Four protective feet at base, 12 1/4\" (L) x 10 1/4\" (H) x 6\" (W)Style No. C5265",
-            "seller": "Nancy Pelosi",
-            "id":2
-        },
-        {
-            "brand": "Celine",
-            "style": "Ava Bag in Smooth Calfskin",
-            "color": "Tan",
-            "size": "Medium",
-            "img":"https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQXBzeij04RjU_VxK1_ousQyBlL9K32I5yl6dfyI4_ioxAmWEWGYVEb5VLaABL91r6nyWjq2Q_tLAsS71iY9bffma7dRRfp_zhvy0D9Bs80qvaQwBJiiRgGguJDLj_LmEA-vQ&usqp=CAc",
-            "condition": "new",
-            "price": 2300,
-            "comments":"9 X 5 X 2 IN (23 X 13.5 X 6 CM),TRIOMPHE CANVAS, TRIMMINGS IN CALFSKIN,TEXTILE LINING,GOLD FINISHING,SHOULDER AND HAND CARRY,ZIPPED CLOSURE,ONE INNER FLAT POCKET,ADJUSTABLE STRAP WITH A MINIMUM DROP 8 IN (22 CM) AND MAXIMUM DROP 9 IN (23 CM),REFERENCE : 193952BZJ.04LU",
-            "seller": "Guy George",
-            "id":3
-        } 
-   ]    
- }
+{
+  "purseData": [
+    {
+      "brand": "Jimmy Choo",
+      "style": "Bucket",
+      "color": "pink",
+      "size": "small",
+      "img": "https://media.jimmychoo.com/image/upload/q_auto:best,f_auto,dpr_2.0,w_900,h_900,c_fit/USPROD_PRODUCT/images/original/BONBONBUCKETSHUT_112562_FRONT_vg04.jpg",
+      "condition": "new",
+      "price": 1200,
+      "description": "Shiny calf leather,Leather and metal top handle,Drawstring closure,Interior pocket,Bag measures: L17 x H17.5 x W11cm, Adjustable and detachable leather strap measures: 47cm,Made in Italy,By purchasing this product, you are supporting sustainable leather manufacturing through the Leather Working Group",
+      "seller": "Margrett Thatcher",
+      "id": 1
+    },
+    {
+      "brand": "Coach",
+      "style": "Lori Shoulder Bag",
+      "color": "Brass/Canyon Multi",
+      "size": "Medium",
+      "img": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRvWaKEder8QK6uE_vCxZUbnB9wYzTiC0SK335iHYBsFwY5GSObnQdL66UbTLKs2wXPssbpaxA6u7GiCBeAXS4ilqrl0LtoecOv9eNvpdNwPLFo5nlgqicS1WDio9oKeB0mQg&usqp=CAc",
+      "condition": "new",
+      "price": 450,
+      "description": "Soft pebble leather and suede Inside snap pocketCenter zip compartment,Magnetic snap closure,fabric lining,Adjustable handles with 11\" drop, Outside zip pocket, Four protective feet at base, 12 1/4\" (L) x 10 1/4\" (H) x 6\" (W)Style No. C5265",
+      "seller": "Nancy Pelosi",
+      "id": 2
+    },
+    {
+      "brand": "Celine",
+      "style": "Ava Bag in Smooth Calfskin",
+      "color": "Tan",
+      "size": "Medium",
+      "img": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQXBzeij04RjU_VxK1_ousQyBlL9K32I5yl6dfyI4_ioxAmWEWGYVEb5VLaABL91r6nyWjq2Q_tLAsS71iY9bffma7dRRfp_zhvy0D9Bs80qvaQwBJiiRgGguJDLj_LmEA-vQ&usqp=CAc",
+      "condition": "new",
+      "price": 2300,
+      "description": "9 X 5 X 2 IN (23 X 13.5 X 6 CM),TRIOMPHE CANVAS, TRIMMINGS IN CALFSKIN,TEXTILE LINING,GOLD FINISHING,SHOULDER AND HAND CARRY,ZIPPED CLOSURE,ONE INNER FLAT POCKET,ADJUSTABLE STRAP WITH A MINIMUM DROP 8 IN (22 CM) AND MAXIMUM DROP 9 IN (23 CM),REFERENCE : 193952BZJ.04LU",
+      "seller": "Guy George",
+      "id": 3
+    }
+    
+  ]
+}

@@ -127,7 +127,8 @@ input[type=submit]:hover {
   background-color: #2a67ec;
   padding: 20px;
   border-radius:25px;
-  right: 50px;
+  right: 200px;
+  top:15px;
 
 }
 #form-edit-container {

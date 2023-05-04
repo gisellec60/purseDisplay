@@ -6,6 +6,7 @@ function createPurseCard(purse) {
     let purseImage = document.createElement("img")
     purseImage.src = purse.img
     purseImage.className = "purseImage"
+    purseImage.id="purseImg"
     let content = document.createElement("div")
     content.className = "purse"
     let h4 = document.createElement("h4")
@@ -57,8 +58,15 @@ function createPurseCard(purse) {
     }   
     
     function editCard(e) {
-        console.log(card)
-        console.log(purse.brand)
+        let upDate = true;
+        document.getElementById("brand").value = purse.brand
+        document.getElementById("style").value = purse.style
+        document.getElementById("color").value = purse.color
+        document.getElementById("size").value = purse.size
+        document.getElementById("purseImg").value = purse.img
+        document.getElementById("condition").value = purse.condition
+        document.getElementById("desc").value = purse.description
+        document.getElementById("price").value = purse.price
     }          
 }
 
@@ -69,12 +77,6 @@ function toggleAvailable(e) {
         e.target.innerText="Available"
     }
 }    
-
-function editCard(e) {cd 
-    console.log(card)
- 
-}
-
   
 function contactSeller(e) {
     console.log(e.target)
@@ -102,7 +104,6 @@ document.getElementById("addPurseInfo").addEventListener("submit", (e) => {
         condition: document.getElementById("desc").value,
         price: document.getElementById("price").value
     }
-    console.log("showme", newPurseObj)
     addPurseCard(newPurseObj)
 })
 
