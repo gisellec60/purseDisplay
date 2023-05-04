@@ -1,0 +1,52 @@
+{
+  "purseData": [
+    {
+      "brand": "Jimmy Choo",
+      "style": "Bon Bon Drawstring Bucket Bag",
+      "color": "orange",
+      "size": "small",
+      "img": "https://media.bergdorfgoodman.com/f_auto,q_auto:good,ar_5:7,c_fill,dpr_1.5,w_720/01/bg_4203994_100664_m",
+      "condition": "new",
+      "price": 1200,
+      "description": "Jimmy Choo bucket bag in smooth calf leather, brass, and genuine snakeskin Chain metal leather top handle, 5.9\" drop, Detachable, adjustable shoulder strap, 15.6\", Drawstring closure, Interior, one zip pocket, Approx. 9\"Hx 8.6\"W x 5.5\"D\"Bon Bon\" is made in Italy",
+      "seller": "Margrett Thatcher",
+      "id": 1
+    },
+    {
+      "brand": "Coach",
+      "style": "Lori Shoulder Bag",
+      "color": "Brass/Canyon",
+      "size": "small",
+      "img": "https://images.coach.com/is/image/Coach/c5265_b4np6_a0?$desktopProduct$",
+      "condition": "new",
+      "price": 315,
+      "description": "Soft pebble leather and suede Inside snap pocketCenter zip compartment,Magnetic snap closure,fabric lining,Adjustable handles with 11\" drop, Outside zip pocket, Four protective feet at base, 12 1/4\" (L) x 10 1/4\" (H) x 6\" (W)Style No. C5265",
+      "seller": "Nancy Pelosi",
+      "id": 2
+    },
+    {
+      "brand": "Celine",
+      "style": "Ava Bag in Triomphe Canvas and Calfskin",
+      "color": "Tan",
+      "size": "small",
+      "img": "data:image/jpeg;base64,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",
+      "condition": "new",
+      "price": 1700,
+      "description": "9 X 5 X 2 IN (23 X 13.5 X 6 CM),TRIOMPHE CANVAS, TRIMMINGS IN CALFSKIN,TEXTILE LINING,GOLD FINISHING,SHOULDER AND HAND CARRY,ZIPPED CLOSURE,ONE INNER FLAT POCKET,ADJUSTABLE STRAP WITH A MINIMUM DROP 8 IN (22 CM) AND MAXIMUM DROP 9 IN (23 CM),REFERENCE : 193952BZJ.04LU",
+      "seller": "Guy George",
+      "id": 3
+    },
+    {
+      "brand": "Jimmy Choo",
+      "style": "Bon Bon Drawstring Bucket Bag",
+      "color": "orange",
+      "size": "small",
+      "img": "https://media.bergdorfgoodman.com/f_auto,q_auto:good,ar_5:7,c_fill,dpr_1.5,w_720/01/bg_4203994_100664_m",
+      "condition": "new",
+      "price": 1200,
+      "description": "Jimmy Choo bucket bag in smooth calf leather, brass, and genuine snakeskin Chain metal leather top handle, 5.9\" drop, Detachable, adjustable shoulder strap, 15.6\", Drawstring closure, Interior, one zip pocket, Approx. 9\"Hx 8.6\"W x 5.5\"D\"Bon Bon\" is made in Italy",
+      "seller": "Margrett Thatcher",
+      "id": 4
+    }
+  ]
+}
