@@ -9,7 +9,7 @@ function createPurseCard(purse) {
     purseImage.id="purseImg"
     let content = document.createElement("div")
     content.className = "purse"
-    
+
     let h4 = document.createElement("h4")
     h4.textContent = `Brand: ${purse.brand}`
     let p1 = document.createElement("p")
@@ -67,10 +67,16 @@ function createPurseCard(purse) {
         document.getElementById("condition").value = purse.condition
         document.getElementById("desc").value = purse.description
         document.getElementById("price").value = purse.price
-        console.log(purse.id)
+    }   
+
+    document.getElementById("addPurseInfo").addEventListener("submit", (e) => {
+        document.getElementById("form-container").style.visibility="hidden"
+        e.preventDefault()
         let purseObj = createPurseObj()
-        updatePurseData(purseObj)
-    }          
+        console.log(purse.id )
+        updatePurseData(purse.id)
+   // addPurseCard(purseObj)
+    }) 
 }
 
 function toggleAvailable(e) {
@@ -84,13 +90,6 @@ function toggleAvailable(e) {
 function contactSeller(e) {
     console.log(e.target)
 }  
-
-document.getElementById("addPurseInfo").addEventListener("submit", (e) => {
-    document.getElementById("form-container").style.visibility="hidden"
-    e.preventDefault()
-    createPurseObj()
-    //addPurseCard(purseObj)
-}) 
 
 function createPurseObj () {    
     let purseObj = {
@@ -157,7 +156,6 @@ function removeCardFromServer(id) {
 }
 
 function updatePurseData(purseObj) {
-    console.log("this is", purseObj)
     fetch("http://localhost:3000/purseData/1", {
         method: 'PUT',
         headers: {
