@@ -58,7 +58,8 @@ function createPurseCard(purse) {
     }   
     
     function editCard() {
-        document.getElementById("form-container").style.visibility="visible"
+        console.log("this is inside", purse)
+        document.getElementById("form-container").style.visibility = "visible"
         document.getElementById("brand").value = purse.brand
         document.getElementById("style").value = purse.style
         document.getElementById("color").value = purse.color
@@ -67,34 +68,20 @@ function createPurseCard(purse) {
         document.getElementById("condition").value = purse.condition
         document.getElementById("desc").value = purse.description
         document.getElementById("price").value = purse.price
-    }   
 
-    document.getElementById("addPurseInfo").addEventListener("submit", (e) => {
-        document.getElementById("form-container").style.visibility="hidden"
-        e.preventDefault()
-        let purseObj = createPurseObj()
-        updatePurseData(purseObj)
-   // addPurseCard(purseObj)
-    }) 
-    
-    function updatePurseData(purseObj) {
-        fetch(`http://localhost:3000/purseData/${purse.id}`, {
-            method: 'PUT',
-            headers: {
-                 "Content-Type": "application/json",
-            },
-            body: JSON.stringify(purseObj)
+        document.getElementById("addPurseInfo").addEventListener("submit", (e) => {
+            document.getElementById("form-container").style.visibility = "hidden"
+            let purseObj=createPurseObj(purse)
+            updatePurseData(purseObj)
         })
-        .then(res => {
-        if (res.ok) { console.log("PUT request successful!!!") } 
-        else { console.log("PUT request unsuccessful") }
-        return res
-        })    
-        .then(res => res.json())
-        .then(purse => console.log(purse))
-        .catch((error) => console.log(error))
-    }
-
+    }    
+//         document.getElementById("addPurseInfo").addEventListener("submit", (e) => {    document.getElementById("form-container").style.visibility = "hidden"
+//         console.log("this is outside", purse)
+//         e.preventDefault()
+//        // createPurseObj()
+//         updatePurseData(purse)
+//    // addPurseCard(purseObj)
+//     }) 
 }
 
 function toggleAvailable(e) {
@@ -173,20 +160,21 @@ function removeCardFromServer(id) {
     .catch((error) => console.log(error))
 }
 
-// function updatePurseData(purseObj) {
-//     fetch("http://localhost:3000/purseData/1", {
-//         method: 'PUT',
-//         headers: {
-//              "Content-Type": "application/json",
-//         },
-//         body: JSON.stringify(purseObj)
-//     })
-//     .then(res => {
-//       if (res.ok) { console.log("PUT request successful!!!") } 
-//       else { console.log("PUT request unsuccessful") }
-//       return res
-//     })    
-//     .then(res => res.json())
-//     .then(purse => console.log(purse))
-//     .catch((error) => console.log(error))
-// }
+function updatePurseData(purse) {
+    console.log(purse)
+    fetch("http://localhost:3000/purseData/1", {
+        method: 'PUT',
+        headers: {
+             "Content-Type": "application/json",
+        },
+        body: JSON.stringify(purse)
+    })
+    .then(res => {
+      if (res.ok) { console.log("PUT request successful!!!") } 
+      else { console.log("PUT request unsuccessful") }
+      return res
+    })    
+    .then(res => res.json())
+    .then(purse => console.log(purse))
+    .catch((error) => console.log(error))
+}
