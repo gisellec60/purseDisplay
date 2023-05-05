@@ -9,6 +9,7 @@ function createPurseCard(purse) {
     purseImage.id="purseImg"
     let content = document.createElement("div")
     content.className = "purse"
+    
     let h4 = document.createElement("h4")
     h4.textContent = `Brand: ${purse.brand}`
     let p1 = document.createElement("p")
@@ -52,13 +53,12 @@ function createPurseCard(purse) {
     document.querySelector(".square").appendChild(card)
     
     function deleteCard() {
-        console.log("this is id ", purse.id)
         card.remove()
         removeCardFromServer(purse.id)
     }   
     
-    function editCard(e) {
-        let upDate = true;
+    function editCard() {
+        document.getElementById("form-container").style.visibility="visible"
         document.getElementById("brand").value = purse.brand
         document.getElementById("style").value = purse.style
         document.getElementById("color").value = purse.color
@@ -67,6 +67,9 @@ function createPurseCard(purse) {
         document.getElementById("condition").value = purse.condition
         document.getElementById("desc").value = purse.description
         document.getElementById("price").value = purse.price
+        console.log(purse.id)
+        let purseObj = createPurseObj()
+        updatePurseData(purseObj)
     }          
 }
 
@@ -80,46 +83,63 @@ function toggleAvailable(e) {
   
 function contactSeller(e) {
     console.log(e.target)
-}    
+}  
 
-    //Fetch Requests
-    //Using Get fetch all the pursedata
-function getAllPurses() {
-        fetch("http://localhost:3000/purseData")
-            .then(res => res.json())
-            .then(purseData => purseData.forEach(purse => createPurseCard(purse)))
-}
-    // fetch add purse to the DOM
-getAllPurses()
-    // This load cards.
 document.getElementById("addPurseInfo").addEventListener("submit", (e) => {
+    document.getElementById("form-container").style.visibility="hidden"
     e.preventDefault()
-    let newPurseObj = {
+    createPurseObj()
+    //addPurseCard(purseObj)
+}) 
+
+function createPurseObj () {    
+    let purseObj = {
         brand: document.getElementById("brand").value,
         style: document.getElementById("style").value,
         color: document.getElementById("color").value,
         size: document.getElementById("size").value,
-        img: document.getElementsByClassName("purseImage").value,
+        img: document.getElementById("purseImg").value,
         desc: document.getElementById("desc").value,
-        condition: document.getElementById("desc").value,
+        condition: document.getElementById("condition").value,
         price: document.getElementById("price").value
     }
-    addPurseCard(newPurseObj)
-})
+   return purseObj
+}
+    //Fetch Requests
+    //Using Get fetch all the pursedata
+function getAllPurses() {
+    fetch("http://localhost:3000/purseData")
+        .then(res => {
+          if (res.ok) { console.log("GET request successful!!!") }
+          else { console.log("GET request unsuccessful") }
+          return res
+        })
+        .then(res => res.json())
+        .then(purseData => purseData.forEach(purse => createPurseCard(purse)))
+}
+   // fetch add purse to the DOM
+getAllPurses()
 
-function addPurseCard(newPurseObj) {
+    // This adds new cards to the server.
+function addPurseCard(purseObj) {
     fetch("http://localhost:3000/purseData", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
             "Accept": "application/json"
         },
-        body: JSON.stringify(newPurseObj)
+        body: JSON.stringify(purseObj)
     })
-   .then(res => res.json())
-   .then(newPurseObj => createPurseCard(newPurseObj))
+        .then(res => {
+           if (res.ok) { console.log("POST request successful!!!") }
+           else { console.log("POST request unsuccessful") }
+           return res
+        })        
+        .then(res => res.json())
+        .then(newPurseObj => createPurseCard(purseObj))
 }
 
+//Removes deleted cards from server
 function removeCardFromServer(id) {
     fetch(`http://localhost:3000/purseData/${id}`, {
         method: 'DELETE',
@@ -128,5 +148,29 @@ function removeCardFromServer(id) {
         }
     })
     .then(res => res.json())
+    .then(res => {
+       if (res.ok) { console.log("DELETE request successful!!!") }
+       else { console.log("DELETE request unsuccessful") }
+       return res
+    })     
+    .catch((error) => console.log(error))
+}
+
+function updatePurseData(purseObj) {
+    console.log("this is", purseObj)
+    fetch("http://localhost:3000/purseData/1", {
+        method: 'PUT',
+        headers: {
+             "Content-Type": "application/json",
+        },
+        body: JSON.stringify(purseObj)
+    })
+    .then(res => {
+      if (res.ok) { console.log("PUT request successful!!!") } 
+      else { console.log("PUT request unsuccessful") }
+      return res
+    })    
+    .then(res => res.json())
+    .then(purse => console.log(purse))
     .catch((error) => console.log(error))
 }

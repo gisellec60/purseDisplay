@@ -6,10 +6,9 @@
       "color": "pink",
       "size": "small",
       "img": "https://media.jimmychoo.com/image/upload/q_auto:best,f_auto,dpr_2.0,w_900,h_900,c_fit/USPROD_PRODUCT/images/original/BONBONBUCKETSHUT_112562_FRONT_vg04.jpg",
+      "desc": "Shiny calf leather,Leather and metal top handle,Drawstring closure,Interior pocket,Bag measures: L17 x H17.5 x W11cm, Adjustable and detachable leather strap measures: 47cm,Made in Italy,By purchasing this product, you are supporting sustainable leather manufacturing through the Leather Working Group",
       "condition": "new",
-      "price": 1200,
-      "description": "Shiny calf leather,Leather and metal top handle,Drawstring closure,Interior pocket,Bag measures: L17 x H17.5 x W11cm, Adjustable and detachable leather strap measures: 47cm,Made in Italy,By purchasing this product, you are supporting sustainable leather manufacturing through the Leather Working Group",
-      "seller": "Margrett Thatcher",
+      "price": "1200",
       "id": 1
     },
     {
@@ -36,6 +35,5 @@
       "seller": "Guy George",
       "id": 3
     }
-    
   ]
 }

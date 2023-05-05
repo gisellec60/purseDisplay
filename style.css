@@ -129,6 +129,7 @@ input[type=submit]:hover {
   border-radius:25px;
   right: 200px;
   top:15px;
+  visibility: hidden;
 
 }
 #form-edit-container {
