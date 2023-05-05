@@ -73,10 +73,28 @@ function createPurseCard(purse) {
         document.getElementById("form-container").style.visibility="hidden"
         e.preventDefault()
         let purseObj = createPurseObj()
-        console.log(purse.id )
-        updatePurseData(purse.id)
+        updatePurseData(purseObj)
    // addPurseCard(purseObj)
     }) 
+    
+    function updatePurseData(purseObj) {
+        fetch(`http://localhost:3000/purseData/${purse.id}`, {
+            method: 'PUT',
+            headers: {
+                 "Content-Type": "application/json",
+            },
+            body: JSON.stringify(purseObj)
+        })
+        .then(res => {
+        if (res.ok) { console.log("PUT request successful!!!") } 
+        else { console.log("PUT request unsuccessful") }
+        return res
+        })    
+        .then(res => res.json())
+        .then(purse => console.log(purse))
+        .catch((error) => console.log(error))
+    }
+
 }
 
 function toggleAvailable(e) {
@@ -155,20 +173,20 @@ function removeCardFromServer(id) {
     .catch((error) => console.log(error))
 }
 
-function updatePurseData(purseObj) {
-    fetch("http://localhost:3000/purseData/1", {
-        method: 'PUT',
-        headers: {
-             "Content-Type": "application/json",
-        },
-        body: JSON.stringify(purseObj)
-    })
-    .then(res => {
-      if (res.ok) { console.log("PUT request successful!!!") } 
-      else { console.log("PUT request unsuccessful") }
-      return res
-    })    
-    .then(res => res.json())
-    .then(purse => console.log(purse))
-    .catch((error) => console.log(error))
-}
+// function updatePurseData(purseObj) {
+//     fetch("http://localhost:3000/purseData/1", {
+//         method: 'PUT',
+//         headers: {
+//              "Content-Type": "application/json",
+//         },
+//         body: JSON.stringify(purseObj)
+//     })
+//     .then(res => {
+//       if (res.ok) { console.log("PUT request successful!!!") } 
+//       else { console.log("PUT request unsuccessful") }
+//       return res
+//     })    
+//     .then(res => res.json())
+//     .then(purse => console.log(purse))
+//     .catch((error) => console.log(error))
+// }
