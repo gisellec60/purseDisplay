@@ -1,27 +1,26 @@
 {
   "purseData": [
     {
+      "id": 1,
       "brand": "Jimmy Choo",
       "style": "Bucket",
       "color": "pink",
-      "size": "Medium",
+      "size": "Extra Large",
       "img": "https://media.jimmychoo.com/image/upload/q_auto:best,f_auto,dpr_2.0,w_900,h_900,c_fit/USPROD_PRODUCT/images/original/BONBONBUCKETSHUT_112562_FRONT_vg04.jpg",
       "desc": "undefined",
-      "condition": "new",
-      "price": "700",
-      "id": 1
+      "condition": "fair",
+      "price": "500"
     },
     {
+      "id": 2,
       "brand": "Coach",
       "style": "Lori Shoulder Bag",
       "color": "Brass/Canyon Multi",
       "size": "Medium",
       "img": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRvWaKEder8QK6uE_vCxZUbnB9wYzTiC0SK335iHYBsFwY5GSObnQdL66UbTLKs2wXPssbpaxA6u7GiCBeAXS4ilqrl0LtoecOv9eNvpdNwPLFo5nlgqicS1WDio9oKeB0mQg&usqp=CAc",
+      "desc": "undefined",
       "condition": "new",
-      "price": 450,
-      "comments": "Soft pebble leather and suede Inside snap pocketCenter zip compartment,Magnetic snap closure,fabric lining,Adjustable handles with 11\" drop, Outside zip pocket, Four protective feet at base, 12 1/4\" (L) x 10 1/4\" (H) x 6\" (W)Style No. C5265",
-      "seller": "Nancy Pelosi",
-      "id": 2
+      "price": "1000"
     },
     {
       "brand": "Celine",
@@ -34,6 +33,17 @@
       "comments": "9 X 5 X 2 IN (23 X 13.5 X 6 CM),TRIOMPHE CANVAS, TRIMMINGS IN CALFSKIN,TEXTILE LINING,GOLD FINISHING,SHOULDER AND HAND CARRY,ZIPPED CLOSURE,ONE INNER FLAT POCKET,ADJUSTABLE STRAP WITH A MINIMUM DROP 8 IN (22 CM) AND MAXIMUM DROP 9 IN (23 CM),REFERENCE : 193952BZJ.04LU",
       "seller": "Guy George",
       "id": 3
+    },
+    {
+      "brand": "Louis Vuitton",
+      "style": "Graceful PM",
+      "color": "monotone",
+      "size": "Extra Large",
+      "img": "https://media.jimmychoo.com/image/upload/q_auto:best,f_auto,dpr_2.0,w_900,h_900,c_fit/USPROD_PRODUCT/images/original/BONBONBUCKETSHUT_112562_FRONT_vg04.jpg",
+      "desc": "beautiful",
+      "condition": "new",
+      "price": "1700",
+      "id": 4
     }
   ]
 }
