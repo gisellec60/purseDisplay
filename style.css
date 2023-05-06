@@ -142,6 +142,13 @@ input[type=submit]:hover {
    visibility: hidden;
    width:200px;
 }
+
+1#email{
+   position:relative;
+   top: -900px;
+   left:700px;
+   width:200px;
+}
 #form-edit-container {
   position:absolute;
   border-radius: 5px;
