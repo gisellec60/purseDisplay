@@ -35,15 +35,26 @@
       "id": 3
     },
     {
+      "id": 4,
       "brand": "Louis Vuitton",
-      "style": "Graceful PM",
-      "color": "monotone",
-      "size": "Extra Large",
-      "img": "https://media.jimmychoo.com/image/upload/q_auto:best,f_auto,dpr_2.0,w_900,h_900,c_fit/USPROD_PRODUCT/images/original/BONBONBUCKETSHUT_112562_FRONT_vg04.jpg",
+      "style": "Bucket",
+      "color": "Monogram",
+      "size": "Large",
+      "img": "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-graceful-mm-monogram-handbags--M43703_PM2_Front%20view.png?wid=2048&hei=2048",
       "desc": "beautiful",
       "condition": "new",
-      "price": "1700",
-      "id": 4
+      "price": "1890"
+    },
+    {
+      "id": 5,
+      "brand": "Chloe",
+      "style": "Marcie",
+      "color": "Tan",
+      "size": "Large",
+      "img": "https://www.chloe.com/product_image/45661616ft/r/w1080.jpg",
+      "desc": "Menu Inside Chloé 0 Menu Inside Chloé Close Country: Us Boutiques Contact Us Search field where you can type the word you want to search to see the related products and possible suggestions What are you looking for? Recommended searches The new collection New arrivals bags The Marcie bag Woody Line The Nama sneaker Alphabet Close shopping bag Your Shopping Bag is empty CHLOÉ CHLOÉ Quantity Quantity Quantity $ 0000 Subtotal $ 0000 The gift wrapping is not available for Paypal Express checkout View Shopping Bag Wishlist Hand bag Hand bag Hand bag Hand bag Hand bag Hand bag Hand bag Hand bag Hand bag Hand bag marcie double carry bag $ 2,490 next day delivery  BUY IN BOUTIQUE   Do you want to know the estimated delivery date? description View more This iconic Marcie double carry bag is a roomy and practical day bag crafted from grained calfskin. Clean lines and a contoured design enhance the slouchy silhouette, while hand-wrapped leather handles add crafty detail. The detachable strap allows for casual, cross-body styling.   All about Marcie...  The Maison’s Marcie bag line blends a feminine aesthetic with a 70s folk spirit. Decorative saddle stitches create equestrian appeal, while the glint of brass hardware and the dangling tassel add a feminine touch. product details Double carry bag in grained calfskin Carry: hand & long shoulder or cross-body  - 1 Roomy compartment - 1 Front slip pocket hidden by the flap - 1 Internal zippered pocket - Removable leather strap - Antique gold finishing - Linen lining Comes with a dust bag  - Width: 14.2” (36 cm) - Height: 11.0\" (28 cm) - Depth: 4.7\" (12 cm) - Min. strap drop: 18.1\" (46 cm) - Max. strap drop: 21.6” (55 cm)  This double carry bag is made from semi-aniline leather. Tanning imparts a specific character to the skin, such as hues and wrinkles, combined with a light and transparent aniline finish. Respect care instructions on the leaflet.  To make this product, Chloe worked with Leather Working Group (LWG) certified leather manufacturers. LWG certifies tanneries based on their water and energy usage, management of chemicals, solid waste, and wastewater.",
+      "condition": "new",
+      "price": "2490"
     }
   ]
 }

@@ -69,28 +69,20 @@ function createPurseCard(purse) {
         document.getElementById("price").value = purse.price
         document.getElementById("jId").value = purse.id
     }
-    // document.getElementById("addPurseInfo").addEventListener("submit", (e) => {
-    //     e.preventDefault()
-    //     document.getElementById("form-container").style.visibility = "hidden"
-    //     console.log(e.target)
-    //     let purseObj = createPurseObj(purse)
-    //     updatePurseData(purseObj)
-    // })
+    document.getElementById("addPurseInfo").addEventListener("submit", (e) => {
+        e.preventDefault()
+        document.getElementById("form-container").style.visibility = "hidden"
+        console.log(e.target)
+        let purseObj = createPurseObj(purse)
+        updatePurseData(purseObj)
+    })
      
-    // document.getElementById("addPurseButn").addEventListener("click", (e) => {
-    //     document.getElementById("form-container").style.visibility = "visible"
-    //     document.getElementById("addPurseInfo").addEventListener("submit", (e) => {
-    //         e.preventDefault()
-    //         let newPurseObj=createPurseObj(purse)
-    //         addPurseCard(newPurseObj)
-    //     })
-    // })
-    
 }
 document.getElementById("addPurseButn").addEventListener("click", (e) => {
         document.getElementById("form-container").style.visibility = "visible"
         document.getElementById("addPurseInfo").addEventListener("submit", (e) => {
             e.preventDefault()
+        document.getElementById("form-container").style.visibility = "hidden"
             let purseObj=createPurseObj()
             addPurseCard(purseObj)
         })    
@@ -120,6 +112,7 @@ function createPurseObj () {
         condition: document.getElementById("condition").value,
         price: document.getElementById("price").value
     }
+    console.log(purseObj)
     return purseObj
 }
     //Fetch Requests
@@ -139,7 +132,6 @@ getAllPurses()
 
     // This adds new cards to the server.
 function addPurseCard(purseObj) {
-    console.log("this is purse Object", purseObj)
     fetch("http://localhost:3000/purseData", {
         method: "POST",
         headers: {
@@ -154,8 +146,8 @@ function addPurseCard(purseObj) {
            return res
         })        
         .then(res => res.json())
-        .then(newPurseObj => console.log("returned", newPurseObj))
-        .then(newPurseObj => createPurseCard(newPurseObj))
+        .then(purseData => console.log(purseData))
+        .then(purseData => createPurseCard(purseData))
         .catch((error) => console.log(error))
 }
 
