@@ -58,7 +58,12 @@ function createPurseCard(purse) {
     }
     
     function editCard() {
-        document.getElementById("form-container").style.visibility = "visible"
+        if (document.getElementById("form-container").style.visibility === "visible") {
+            document.getElementById("form-container").style.visibility = "hidden"
+        }
+        else {
+          document.getElementById("form-container").style.visibility = "visible"  
+        }
         document.getElementById("brand").value = purse.brand
         document.getElementById("style").value = purse.style
         document.getElementById("color").value = purse.color
@@ -78,13 +83,18 @@ document.getElementById("addPurseInfo").addEventListener("submit", (e) => {
      
 }
 document.getElementById("addPurseButn").addEventListener("click", (e) => {
+    if (document.getElementById("form-container").style.visibility === "visible") {
+        document.getElementById("form-container").style.visibility = "hidden"
+    }
+    else {
         document.getElementById("form-container").style.visibility = "visible"
         document.getElementById("addPurseInfo").addEventListener("submit", (e) => {
             e.preventDefault()
-        document.getElementById("form-container").style.visibility = "hidden"
-            let purseObj=createPurseObj()
+            document.getElementById("form-container").style.visibility = "hidden"
+            let purseObj = createPurseObj()
             addPurseCard(purseObj)
-        })    
+        })
+    }    
 })
     
 function toggleAvailable(e) {               

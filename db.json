@@ -64,10 +64,32 @@
       "style": "Marcie double carry bag",
       "color": "Tan Leather",
       "size": "Medium",
-      "img":"https://www.chloe.com/product_image/45661616ft/f/w1080.jpg",
+      "img": "https://www.chloe.com/product_image/45661616ft/f/w1080.jpg",
       "desc": "Double carry bag in grained calfskin Carry: hand & long shoulder or cross-body  - 1 Roomy compartment - 1 Front slip pocket hidden by the flap - 1 Internal zippered pocket - Removable leather strap - Antique gold finishing - Linen lining Comes with a dust bag  - Width: 14.2” (36 cm) - Height: 11.0\" (28 cm) - Depth: 4.7\" (12 cm) - Min. strap drop: 18.1\" (46 cm) - Max. strap drop: 21.6” (55 cm)  This double carry bag is made from semi-aniline leather. Tanning imparts a specific character to the skin, such as hues and wrinkles, combined with a light and transparent aniline finish. Respect care instructions on the leaflet.  To make this product, Chloe worked with Leather Working Group (LWG) certified leather manufacturers. LWG certifies tanneries based on their water and energy usage, management of chemicals, solid waste, and wastewater.",
       "condition": "new",
       "price": "2490"
+    },
+    {
+      "id": 7,
+      "brand": "Kate Spade",
+      "style": "Everything Racing Stripe Faux",
+      "color": "Cream Multi",
+      "size": "Medium",
+      "img": "https://images.katespade.com/is/image/KateSpade/K9937_250?$desktopProduct$",
+      "desc": "11.02\"h x 12.6”w x 6.69”d Handle drop: 5.5\" Faux shearling with jacquard stripe Faille lining Pinmount logo Tote with tie closure Interior zip pocket Interior slip pocket Fits current iPhone, iPad, A4 binder, 13” laptop",
+      "condition": "new",
+      "price": "278"
+    },
+    {
+      "id": 8,
+      "brand": "Catier",
+      "style": "PANTHÈRE DE CARTIER BAG, CHAIN BAG",
+      "color": "Red",
+      "size": "Small",
+      "img":"https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dwe8d99b67/images/large/638133997899740287-2433710.png?sw=750&sh=750&sm=fit&sfrm=png",
+      "desc": "Mini chain bag in burgundy calfskin, burgundy leather and golden-finish clasp, golden hot-stamped “Cartier” signature inside. Three inside compartments, one flat pocket and one signature pocket with removable mirror. Lining: black lambskin. Dimensions: 140 mm high x 200 mm wide x 85 mm deep. Shoulder and cross-body carry. Read Less",
+      "condition": "new",
+      "price": "3150"
     }
   ]
 }
