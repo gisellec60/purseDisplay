@@ -49,7 +49,7 @@ function createPurseCard(purse) {
     content.append(h4, p1, p2, p3, p4, p5, butn1, butn2, butn3, butn4)
     console.log
     card.append(purseImage, content)
-    document.querySelector(".square").appendChild(card)
+    document.querySelector("#square").appendChild(card)
     //add pusre to DOM
     //document.querySelector(".square").appendChild(card)
     function deleteCard() {

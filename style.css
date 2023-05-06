@@ -49,21 +49,24 @@ pre.sibling-element {
     font-style: italic;
 }
 
-div.square {
-  position:absolute;  
+#square {
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  position:relative;  
   font-family:Arial, Helvetica, sans-serif;
   line-height: 15px;
-  width:300px;
+  width:1560px;
   padding:5px 25px 25px;
   border: 2px;
   margin-left:30px;
-  top:100px;
+  top:-1200px;
   font-weight:bolder;
  }
 
 .card{
   background-color:rgba(42, 115, 233, 0.967);
-  margin:3%;
+  margin:2%;
   width:250px;
   border-radius:25px;
 }
@@ -143,12 +146,6 @@ input[type=submit]:hover {
    width:200px;
 }
 
-1#email{
-   position:relative;
-   top: -900px;
-   left:700px;
-   width:200px;
-}
 #form-edit-container {
   position:absolute;
   border-radius: 5px;

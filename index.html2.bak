@@ -6,8 +6,9 @@
     </head>
     <body>
         <div class='image'>
-            <img src="c:/Users/gisel/Desktop/JavaScript/FullStack/HTML-CSS/fashion-modern-bags-handbags-sphere-compliment-blue-background-161893602.jpg" alt="hanbags" width="1550" height"1000"> 
+            <img src="c:/Users/gisel/Desktop/JavaScript/FullStack/HTML-CSS/fashion-modern-bags-handbags-sphere-compliment-blue-background-161893602.jpg" alt="hanbags" width="1550" height"400"> 
         </div>
+        <div class="image-container">
             <h1>New Bagz Used Bagz</h1>
             <pre class="sibling-element">
                 👜 New and Used Designer Handbags
@@ -20,10 +21,9 @@
              </form>  
             <button id="addPurseButn" >Add Purse</button>
             <section id="displayDesc"></section>
-            <section id="square"></section>
-
+            <section class="square">
     `       <div id="form-container">
-                  <form id="addPurseInfo">
+                <form id="addPurseInfo">
                     <input type="text" id="jId" name="id"><br>
                     <label for="brand">Brand</label> 
                     <input type="text" id="brand" name="brand"placeholder="Enter brand name..." > <br>
@@ -44,7 +44,7 @@
                     <input type="submit" name="submit">
                 </form>
               </div>
-             
+           </div>      
         <script src="index.js" defer></script>
         <script src="https://smtpjs.com/v3/smtp.js"></script>
     </body>
