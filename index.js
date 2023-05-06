@@ -69,10 +69,9 @@ function createPurseCard(purse) {
         document.getElementById("price").value = purse.price
         document.getElementById("jId").value = purse.id
     }
-    document.getElementById("addPurseInfo").addEventListener("submit", (e) => {
+document.getElementById("addPurseInfo").addEventListener("submit", (e) => {
         e.preventDefault()
         document.getElementById("form-container").style.visibility = "hidden"
-        console.log(e.target)
         let purseObj = createPurseObj(purse)
         updatePurseData(purseObj)
     })
@@ -96,8 +95,8 @@ function toggleAvailable(e) {
     }
 }    
   
-function contactSeller(e) {
-    console.log(e.target)
+function contactSeller() {
+   document.getElementById("email").style.visibility="visible"
 }  
 
 function createPurseObj () {    

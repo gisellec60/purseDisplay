@@ -131,7 +131,16 @@ input[type=submit]:hover {
   right: 200px;
   top:-30px;
   visibility: hidden;
+}
 
+#email{
+   position:relative;
+   border-radius: 5px;
+   background-color: #2a67ec;
+   top: -900px;
+   left:700px;
+   visibility: hidden;
+   width:200px;
 }
 #form-edit-container {
   position:absolute;
@@ -178,6 +187,6 @@ input[type=submit]:hover {
 }
 #addPurseButn{
   position: relative;
-  top: -1000px;
+  top: -1200px;
   left:750px;
 }
