@@ -81,20 +81,20 @@ document.getElementById("addPurseInfo").addEventListener("submit", (e) => {
         updatePurseData(purseObj)
     })
     
-// function contactSeller() {
-//     if (document.getElementById("email").style.visibility === "visible"){
-//             document.getElementById("email").style.visibility = "hidden"
-//     }
-//     else {
-//         document.getElementById("email").style.visibility = "visible"
-//         console.log(purse.email)
-//         document.getElementById("email").addEventListener("submit", (e) => {
-//              e.preventDefault()
-//              console.log(purse.email)
-//              document.getElementById("email").style.visibility = "hidden"
-//          })
-//     }
-// }   
+function contactSeller() {
+    if (document.getElementById("email").style.visibility === "visible"){
+            document.getElementById("email").style.visibility = "hidden"
+    }
+    else {
+        document.getElementById("email").style.visibility = "visible"
+        console.log(purse.email)
+        document.getElementById("email").addEventListener("submit", (e) => {
+             e.preventDefault()
+             console.log(purse.email)
+             document.getElementById("email").style.visibility = "hidden"
+         })
+    }
+}   
      
 } //createPurseCard
 document.getElementById("addPurseButn").addEventListener("click", (e) => {
@@ -120,13 +120,13 @@ function toggleAvailable(e) {
     }
 }    
   
-function contactSeller() {
-    console.log("here")
-    document.getElementById("email").style.visibility = "visible"
-    document.getElementById("email").addEventListener("submit", (e) => {
-    })
-    document.getElementById("email").style.visibility = "hidden"
-    }
+// function contactSeller() {
+//     document.getElementById("email").style.visibility = "visible"
+//     document.getElementById("email").addEventListener("submit", (e) => {
+//             console.log(purse)
+//             document.getElementById("email").style.visibility = "hidden"
+//          })
+//     }
   
 
 function createPurseObj () {    
