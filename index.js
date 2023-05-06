@@ -96,12 +96,15 @@ function toggleAvailable(e) {
 }    
   
 function contactSeller() {
-       
-    document.getElementById("email").style.visibility = "visible"
-    document.getElementById("email").addEventListener("submit", (e) => {
-       document.getElementById("email").style.visibility = "hidden" 
-    })
-
+    if (document.getElementById("email").style.visibility === "visible"){
+        document.getElementById("email").style.visibility = "hidden"
+    }
+    else {
+        document.getElementById("email").style.visibility = "visible"
+        document.getElementById("email").addEventListener("submit", (e) => {
+            document.getElementById("email").style.visibility = "hidden"
+         })
+    }
 }  
 
 function createPurseObj () {    
