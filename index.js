@@ -74,6 +74,7 @@ function createPurseCard(purse) {
         document.getElementById("price").value = purse.price
         document.getElementById("jId").value = purse.id
     }
+
 document.getElementById("addPurseInfo").addEventListener("submit", (e) => {
         e.preventDefault()
         document.getElementById("form-container").style.visibility = "hidden"
@@ -81,20 +82,16 @@ document.getElementById("addPurseInfo").addEventListener("submit", (e) => {
         updatePurseData(purseObj)
     })
     
-// function contactSeller() {
-//     if (document.getElementById("email").style.visibility === "visible"){
-//             document.getElementById("email").style.visibility = "hidden"
-//     }
-//     else {
-//         document.getElementById("email").style.visibility = "visible"
-//         console.log(purse.email)
-//         document.getElementById("email").addEventListener("submit", (e) => {
-//              e.preventDefault()
-//              console.log(purse.email)
-//              document.getElementById("email").style.visibility = "hidden"
-//          })
-//     }
-// }   
+function contactSeller() {
+    if (document.getElementById("email").style.visibility === "visible"){
+            document.getElementById("email").style.visibility = "hidden"
+    }
+    else {
+        document.getElementById("email").style.visibility = "visible"
+       // document.getElementById("firstName").value = purse.firstName
+        document.getElementById("emailSel").value = purse.email
+    }
+}   
      
 } //createPurseCard
 document.getElementById("addPurseButn").addEventListener("click", (e) => {
@@ -120,15 +117,12 @@ function toggleAvailable(e) {
     }
 }    
   
-function contactSeller() {
-    console.log("here")
-    document.getElementById("email").addEventListener("submit", (e) => {
-        document.getElementById("email").Firstname
-        document.getElementById("email").email
-        document.getElementById("email").style.visibility = "hidden"
-        document.getElementById("email").style.visibility
-    })
-}
+// function contactSeller() {
+//     console.log("here")
+//     document.getElementById("email").style.visibility = "visible"
+//     document.getElementById("firstName").value = "giselle"
+//     document.getElementById("emailSel").value = "gisellec60@gmail.com"
+// } 
   
 
 function createPurseObj () {    
