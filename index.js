@@ -100,7 +100,7 @@ document.getElementById("addPurseButn").addEventListener("click", (e) => {
     }
     else {
         document.getElementById("form-container").style.visibility = "visible"
-        document.getElementById("addPurseInfo").addEventListener("submit", (e) => {
+        document.getElementById("addPurseData").addEventListener("submit", (e) => {
             e.preventDefault()
             document.getElementById("form-container").style.visibility = "hidden"
             let purseObj = createPurseObj()
