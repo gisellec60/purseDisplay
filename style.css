@@ -169,8 +169,9 @@ div#emil{
   width:80px
 }
 
-#jId{
+#jId, #add-jId{
   width:40px;
+  visibility:hidden
 }
 
 #brand,#style,#size,#img,#condition  {

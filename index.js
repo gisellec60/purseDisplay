@@ -1,10 +1,11 @@
 function createPurseCard(purse) {
-    //console.log(purse)
+    console.log("this is create", purse)
     //Build Purse
     let card = document.createElement("div")
     card.className = 'card'
     let purseImage = document.createElement("img")
     purseImage.src = purse.img
+    console.log(purse.img)
     purseImage.className = "purseImage"
     purseImage.id = "purseImg"
     let content = document.createElement("div")
@@ -78,7 +79,7 @@ function createPurseCard(purse) {
 document.getElementById("addPurseInfo").addEventListener("submit", (e) => {
         e.preventDefault()
         document.getElementById("editForm-Container").style.visibility = "hidden"
-        let purseObj = createPurseObj(purse)
+        let purseObj = editPurseObj(purse)
         updatePurseData(purseObj)
     })
     
@@ -100,13 +101,14 @@ document.getElementById("addPurseButn").addEventListener("click", (e) => {
     }
     else {
         document.getElementById("addForm-Container").style.visibility = "visible"
-        document.getElementById("addPurseData").addEventListener("submit", (e) => {
-            e.preventDefault()
-            document.getElementById("addForm-Container").style.visibility = "hidden"
-            let purseObj = createPurseObj()
-            addPurseCard(purseObj)
-        })
-    }    
+    }
+})     
+document.getElementById("addPurseData").addEventListener("submit", (e) => {
+        e.preventDefault()
+        document.getElementById("addForm-Container").style.visibility = "hidden"
+        let purseObj = createPurseObj()
+        console.log(purseObj)
+        addPurseCard(purseObj)
 })
     
 function toggleAvailable(e) {               
@@ -117,14 +119,7 @@ function toggleAvailable(e) {
     }
 }    
   
-// function contactSeller() {
-//     console.log("here")
-//     document.getElementById("email").style.visibility = "visible"
-//     document.getElementById("firstName").value = "giselle"
-//     document.getElementById("emailSel").value = "gisellec60@gmail.com"
-// } 
- 
-function createPurseObj () {    
+function editPurseObj () {    
     let purseObj = {
         id:document.getElementById("jId").value,
         brand: document.getElementById("brand").value,
@@ -140,7 +135,22 @@ function createPurseObj () {
     console.log(purseObj)
     return purseObj
 }
-    //Fetch Requests
+function createPurseObj () {    
+    let purseObj = {
+        id:document.getElementById("add-jId").value,
+        brand: document.getElementById("add-brand").value,
+        style: document.getElementById("add-style").value,
+        color: document.getElementById("add-color").value,
+        size: document.getElementById("add-size").value,
+        img: document.getElementById("add-purseImg").value,
+        desc: document.getElementById("add-desc").value,
+        condition: document.getElementById("add-condition").value,
+        price: document.getElementById("add-price").value,
+        email:document.getElementById("add-emailSeller").value
+    }
+    console.log(purseObj)
+    return purseObj
+}    //Fetch Requests
     //Using Get fetch all the pursedata
 function getAllPurses() {
     fetch("http://localhost:3000/purseData")
@@ -171,7 +181,7 @@ function addPurseCard(purseObj) {
            return res
         })        
         .then(res => res.json())
-        .then(purseData => console.log(purseData))
+        .then(purseData => console.log("this is it", purseData))
         .then(purseData => createPurseCard(purseData))
         .catch((error) => console.log(error))
 }

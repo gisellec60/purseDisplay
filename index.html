@@ -29,30 +29,6 @@
                     <input type="text" id="color" name="color"><br>
                     <label for="size">Size</label>
                     <input type="text" id="size" name="size" placeholder="small:medium:large:extra Large"><br>
-                    <label>Image</label><br><br> 
-                    <input type="text" class="purseImage" id="purseImg" name="image" placeholder="Enter a purse's image url"> <br><br>
-                    <label for="condition">Condition</label>
-                    <input type="text" id="condition"name="condition" placeholder="new,used:excellent, used:good, used:fair"><br>
-                    <label for="desc">Description</label>
-                    <input type="text" id="desc" name="desc"><br>
-                    <label for="price">Price</label>
-                    <input type="text" id="price" name="price"><br>
-                    <label for="emailSeller">email</label>
-                    <input type="text" id="emailSeller" name="emailSeller" 
-                    <input type="submit" name="submit">
-                </form>
-            </div> 
-            <div id="addForm-Container">   
-                <form id="addPurseData">
-                    <input type="text" id="jId" name="id"><br>
-                    <label for="brand">Brand</label> 
-                    <input type="text" id="brand" name="brand"placeholder="Enter brand name..." > <br>
-                    <label for="style">Style</label>
-                    <input type="text" id="style" name="style" placeholder="brand style: Anna,Graceful PM etc., "><br>
-                    <label for="color">Color</label> 
-                    <input type="text" id="color" name="color"><br>
-                    <label for="size">Size</label>
-                    <input type="text" id="size" name="size" placeholder="small:medium:large:extra Large"><br>
                     <label>Image</label> 
                     <input type="text" class="purseImage" id="purseImg" name="image" placeholder="Enter a purse's image url" value=""><br>
                     <label for="condition">Condition</label>
@@ -65,6 +41,30 @@
                     <input type="text" id="emailSeller" name="emailSeller"><br> 
                     <input type="submit" name="submit">
                 </form>
+            </div> 
+            <div id="addForm-Container">   
+                <form id="addPurseData">
+                    <input type="text" id="add-jId" name="id"><br>
+                    <label for="brand">Brand</label> 
+                    <input type="text" id="add-brand" name="brand"placeholder="Enter brand name..." > <br>
+                    <label for="style">Style</label>
+                    <input type="text" id="add-style" name="style" placeholder="brand style: Anna,Graceful PM etc., "><br>
+                    <label for="color">Color</label> 
+                    <input type="text" id="add-color" name="color"><br>
+                    <label for="size">Size</label>
+                    <input type="text" id="add-size" name="size" placeholder="small:medium:large:extra Large"><br>
+                    <label>Image</label> 
+                    <input type="text" class="purseImage" id="add-purseImg" name="image" placeholder="Enter a purse's image url" value=""><br>
+                    <label for="condition">Condition</label>
+                    <input type="text" id="add-condition"name="condition" placeholder="new,used:excellent, used:good, used:fair"><br>
+                    <label for="desc">Description</label>
+                    <input type="text" id="add-desc" name="desc"><br>
+                    <label for="price">Price</label>
+                    <input type="text" id="add-price" name="price"><br>
+                    <label for="emailSeller">email</label>
+                    <input type="text" id="add-emailSeller" name="emailSeller"><br> 
+                    <input type="submit" name="submit">
+                </form>
               </div>
               <div id="emailForm">    
                     <form id="email" action="mailto:you@yourdmainhere.com" method="post" enctype="text/plain">
@@ -74,6 +74,5 @@
                     </form> 
               </div>  
         <script src="index.js" defer></script>
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
     </body>
 </html>

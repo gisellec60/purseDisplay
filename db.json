@@ -1,28 +1,28 @@
 {
   "purseData": [
     {
+      "id": 1,
       "brand": "Jimmy Choo",
       "style": "Bucket",
       "color": "pink",
       "size": "small",
       "img": "https://media.jimmychoo.com/image/upload/q_auto:best,f_auto,dpr_2.0,w_900,h_900,c_fit/USPROD_PRODUCT/images/original/BONBONBUCKETSHUT_112562_FRONT_vg04.jpg",
+      "desc": "undefined",
       "condition": "new",
-      "price": 1200,
-      "comments": "Shiny calf leather,Leather and metal top handle,Drawstring closure,Interior pocket,Bag measures: L17 x H17.5 x W11cm, Adjustable and detachable leather strap measures: 47cm,Made in Italy,By purchasing this product, you are supporting sustainable leather manufacturing through the Leather Working Group",
-      "email": "mary@gmail.com",
-      "id": 1
+      "price": "700",
+      "email": ""
     },
     {
+      "id": 2,
       "brand": "Coach",
       "style": "Lori Shoulder Bag",
       "color": "Brass/Canyon Multi",
       "size": "Medium",
       "img": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRvWaKEder8QK6uE_vCxZUbnB9wYzTiC0SK335iHYBsFwY5GSObnQdL66UbTLKs2wXPssbpaxA6u7GiCBeAXS4ilqrl0LtoecOv9eNvpdNwPLFo5nlgqicS1WDio9oKeB0mQg&usqp=CAc",
+      "desc": "undefined",
       "condition": "new",
-      "price": 450,
-      "comments": "Soft pebble leather and suede Inside snap pocketCenter zip compartment,Magnetic snap closure,fabric lining,Adjustable handles with 11\" drop, Outside zip pocket, Four protective feet at base, 12 1/4\" (L) x 10 1/4\" (H) x 6\" (W)Style No. C5265",
-      "email": "nancy@gmail.com",
-      "id": 2
+      "price": "1000",
+      "email": ""
     },
     {
       "brand": "Celine",
@@ -95,6 +95,30 @@
       "condition": "new",
       "price": "3150",
       "email": "Miriam@outlook.com"
+    },
+    {
+      "id": 9,
+      "brand": "Valentino",
+      "style": "SMALL VSLING GRAINY CALFSKIN HANDBAG",
+      "color": "Light Blue",
+      "size": "small",
+      "img": "https://valentino-cdn.thron.com/delivery/public/image/valentino/8b133fc8-6b16-423b-b4a4-5ad7cf930688/ihqstx/std/2000x0/SMALL-VSLING-GRAINY-CALFSKIN-HANDBAG?quality=80&size=35&format=auto",
+      "desc": "Small Valentino Garavani VSLING grainy calfskin leather handbag with VLogo Signature closure. Equipped with an extendable shoulder strap, this accessory can be worn as a crossbody/shoulder bag, or carried in the hand using the handle. - Antique-brass-finish metal hardware - Magnetic closure with leather-covered logo - Leather shoulder strap with adjustable chain - Protective feet - Nappa lining - Interior: red zipper pocket - Dimensions: W22xH17xD9 cm / W8.7xH6.7xD3.5 in. - Made in Italy",
+      "condition": "new",
+      "price": "3250",
+      "email": "nancy@gmail.com"
+    },
+    {
+      "id": 10,
+      "brand": "Bvlgari",
+      "style": "SERPENTI FOREVER CHAIN WALLET",
+      "color": "green",
+      "size": "small",
+      "img": "https://media2.bulgari.com/f_auto,q_auto,c_pad,h_520,w_520/production/dw3c23e163/images/images/1361597.png",
+      "desc": "Serpenti Forever chain wallet in emerald green calf leather with black nappa leather interior. Captivating snakehead magnetic closure in light gold-plated brass, embellished with black and white agate enamel scales and green malachite eyes.",
+      "condition": "new",
+      "price": "2000",
+      "email": "george@gmail.com"
     }
   ]
 }
