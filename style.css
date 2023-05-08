@@ -125,13 +125,24 @@ input[type=submit]:hover {
 }
 
 /* Add a background color and some padding around the form */
-#form-container {
+
+#addForm-Container {
   position:absolute;
   border-radius: 5px;
   background-color: #2a67ec;
   padding: 20px;
   border-radius:25px;
   right: 200px;
+  top:-30px;
+  visibility: hidden;
+}
+#editForm-Container {
+  position:absolute;
+  border-radius: 5px;
+  background-color: #2a67ec;
+  padding: 20px;
+  border-radius:25px;
+  left: 200px;
   top:-30px;
   visibility: hidden;
 }
@@ -150,7 +161,7 @@ div#emil{
    width:200px;
 }
 
-#form-edit-container {
+1#form-edit-container {
   position:absolute;
   border-radius: 5px;
   background-color: #2a67ec;

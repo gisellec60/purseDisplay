@@ -58,11 +58,11 @@ function createPurseCard(purse) {
     }
     
     function editCard() {
-        if (document.getElementById("form-container").style.visibility === "visible") {
-            document.getElementById("form-container").style.visibility = "hidden"
+        if (document.getElementById("editForm-Container").style.visibility === "visible") {
+            document.getElementById("editForm-Container").style.visibility = "hidden"
         }
         else {
-          document.getElementById("form-container").style.visibility = "visible"  
+          document.getElementById("editForm-Container").style.visibility = "visible"  
         }
         document.getElementById("brand").value = purse.brand
         document.getElementById("style").value = purse.style
@@ -77,7 +77,7 @@ function createPurseCard(purse) {
 
 document.getElementById("addPurseInfo").addEventListener("submit", (e) => {
         e.preventDefault()
-        document.getElementById("form-container").style.visibility = "hidden"
+        document.getElementById("editForm-Container").style.visibility = "hidden"
         let purseObj = createPurseObj(purse)
         updatePurseData(purseObj)
     })
@@ -95,14 +95,14 @@ function contactSeller() {
      
 } //createPurseCard
 document.getElementById("addPurseButn").addEventListener("click", (e) => {
-    if (document.getElementById("form-container").style.visibility === "visible") {
-        document.getElementById("form-container").style.visibility = "hidden"
+    if (document.getElementById("addForm-Container").style.visibility === "visible") {
+        document.getElementById("addForm-Container").style.visibility = "hidden"
     }
     else {
-        document.getElementById("form-container").style.visibility = "visible"
+        document.getElementById("addForm-Container").style.visibility = "visible"
         document.getElementById("addPurseData").addEventListener("submit", (e) => {
             e.preventDefault()
-            document.getElementById("form-container").style.visibility = "hidden"
+            document.getElementById("addForm-Container").style.visibility = "hidden"
             let purseObj = createPurseObj()
             addPurseCard(purseObj)
         })
