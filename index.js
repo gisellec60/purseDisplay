@@ -123,8 +123,7 @@ function toggleAvailable(e) {
 //     document.getElementById("firstName").value = "giselle"
 //     document.getElementById("emailSel").value = "gisellec60@gmail.com"
 // } 
-  
-
+ 
 function createPurseObj () {    
     let purseObj = {
         id:document.getElementById("jId").value,
