@@ -60,7 +60,7 @@ pre.sibling-element {
   padding:5px 25px 25px;
   border: 2px;
   margin-left:30px;
-  top:-1180px;
+  top:-1000px;
   font-weight:bolder;
  }
 
@@ -135,14 +135,18 @@ input[type=submit]:hover {
   top:-30px;
   visibility: hidden;
 }
+div#emil{
+  position:absolute;
+  top:1000px;
+}
 
 #email{
    position:relative;
    border-radius: 5px;
    background-color: #2a67ec;
-   top: -1120px;
+   top: -1900px;
    left:100px;
-   visibility: hidden;
+   visibility: visible;
    width:200px;
 }
 
@@ -180,17 +184,12 @@ input[type=submit]:hover {
   font-weight:bolder;
   display:none
 }
-.square{
-  position:absolute;
-  top:150px;
-  left:50px;
-}
 
 #jId{
   visibility:hidden;
 }
 #addPurseButn{
   position: relative;
-  top: -1200px;
+  top: -1000px;
   left:750px;
 }

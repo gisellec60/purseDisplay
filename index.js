@@ -122,11 +122,13 @@ function toggleAvailable(e) {
   
 function contactSeller() {
     console.log("here")
-    document.getElementById("email").style.visibility = "visible"
     document.getElementById("email").addEventListener("submit", (e) => {
+        document.getElementById("email").Firstname
+        document.getElementById("email").email
+        document.getElementById("email").style.visibility = "hidden"
+        document.getElementById("email").style.visibility
     })
-    document.getElementById("email").style.visibility = "hidden"
-    }
+}
   
 
 function createPurseObj () {    
