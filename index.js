@@ -129,20 +129,6 @@ document.getElementById("addPurseData").addEventListener("submit", (e) => {
         addPurseCard(purseObj)
 })
     
-// function toggleAvailable(e) { 
-//     if (e.target.innerText === "Available") {
-//         e.target.innerText = "Uavailable"
-//         document.querySelector(".butn").disabled = true;
-//         document.querySelector(".delete").disabled = true;
-//         document.querySelector(".seller").disabled = true;
-//     } else {
-//         e.target.innerText = "Available"
-//         document.querySelector(".edit").disabled = false;
-//         document.querySelector(".delete").disabled = false;
-//         document.querySelector(".seller").disabled = false;
-//     }
-// }    
-  
 function editPurseObj () {    
     let purseObj = {
         id:document.getElementById("jId").value,
