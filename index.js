@@ -1,11 +1,10 @@
 function createPurseCard(purse) {
-    console.log("this is create", purse)
-    //Build Purse
+     //Build Purse
     let card = document.createElement("div")
     card.className = 'card'
     let purseImage = document.createElement("img")
     purseImage.src = purse.img
-    console.log(purse.img)
+    
     purseImage.className = "purseImage"
     purseImage.id = "purseImg"
     let content = document.createElement("div")
