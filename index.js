@@ -6,7 +6,8 @@ function createPurseCard(purse) {
     purseImage.src = purse.img
     
     purseImage.className = "purseImage"
-    purseImage.id = "purseImg"
+    purseImage.id = `purseImg-${purse.id}`
+    console.log(purseImage.id)
     let content = document.createElement("div")
     content.className = "purse"
 
@@ -27,19 +28,24 @@ function createPurseCard(purse) {
     
     let butn1 = document.createElement("button")
     butn1.className = "avail"
+    butn1.id = `butn1-${purse.id}`
+    console.log(butn1.id)
     butn1.textContent = "Available"
  
     let butn2 = document.createElement("button")
     butn2.className = "edit"
+    butn2.id=`butn2-${purse.id}`
     butn2.textContent = "Edit"
     
 
     let butn3 = document.createElement("button")
     butn3.className = "delete"
+    butn3.id = `butn3-${purse.id}`
     butn3.textContent = "Delete"
 
     let butn4 = document.createElement("button")
     butn4.className = "seller"
+    butn4.id = `butn4-${purse.id}`
     butn4.textContent = "Seller"
 
     butn1.addEventListener("click", toggleAvailable)
@@ -92,7 +98,20 @@ function contactSeller() {
         document.getElementById("emailSel").value = purse.email
     }
 }   
-     
+    function toggleAvailable(e) {
+        console.log(purse.id)
+        if (e.target.innerText === "Available") {
+            e.target.innerText = "Uavailable"
+            document.getElementById(`butn2-${purse.id}`).disabled = true;
+            document.getElementById(`butn3-${purse.id}`).disabled = true;
+            document.getElementById(`butn4-${purse.id}`).disabled = true;
+        } else {
+            e.target.innerText = "Available"
+            document.getElementById(`butn2-${purse.id}`).disabled = false;
+            document.getElementById(`butn3-${purse.id}`).disabled = false;
+            document.getElementById(`butn4-${purse.id}`).disabled = false;
+        }
+    }    
 } //createPurseCard
 document.getElementById("addPurseButn").addEventListener("click", (e) => {
     if (document.getElementById("addForm-Container").style.visibility === "visible") {
@@ -110,19 +129,19 @@ document.getElementById("addPurseData").addEventListener("submit", (e) => {
         addPurseCard(purseObj)
 })
     
-function toggleAvailable(e) {               
-    if (e.target.innerText === "Available") {
-        e.target.innerText = "Uavailable"
-        document.querySelector(".edit").disabled = true;
-        document.querySelector(".delete").disabled = true;
-        document.querySelector(".seller").disabled = true;
-    } else {
-        e.target.innerText = "Available"
-        document.querySelector(".edit").disabled = false;
-        document.querySelector(".delete").disabled = false;
-        document.querySelector(".seller").disabled = false;
-    }
-}    
+// function toggleAvailable(e) { 
+//     if (e.target.innerText === "Available") {
+//         e.target.innerText = "Uavailable"
+//         document.querySelector(".butn").disabled = true;
+//         document.querySelector(".delete").disabled = true;
+//         document.querySelector(".seller").disabled = true;
+//     } else {
+//         e.target.innerText = "Available"
+//         document.querySelector(".edit").disabled = false;
+//         document.querySelector(".delete").disabled = false;
+//         document.querySelector(".seller").disabled = false;
+//     }
+// }    
   
 function editPurseObj () {    
     let purseObj = {

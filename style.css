@@ -70,10 +70,12 @@ pre.sibling-element {
   height:80px;
 }
 
-.foundation-2:hover {
-  transform: scale(1.5);
-  margin-left:1000px;
-  margin-top:100px;
+.purseImage:hover {
+  transform: scale(1.0 do);
+  margin-left:100px;
+  margin-top:50px;
+  width:500px;
+  height:500px;
 }
 
 .foundation-3:hover {
