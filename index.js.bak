@@ -8,7 +8,6 @@ function createPurseCard(purse) {
     
     purseImage.className = "purseImage"
     purseImage.id = `purseImg-${purse.id}`
-    console.log(purseImage.id)
     let content = document.createElement("div")
     content.className = "purse"
 
@@ -26,12 +25,11 @@ function createPurseCard(purse) {
     p5.textContent = `price: $${purse.price}.00`
     let p6 = document.createElement("p")
     p6.id = `desc-${purse.id}`
-    p6.textContent = `description: ${purse.description}`
+    p6.textContent = `desc: ${purse.description}`
     
     let butn1 = document.createElement("button")
     butn1.className = "avail"
     butn1.id = `butn1-${purse.id}`
-    console.log(butn1.id)
     butn1.textContent = "Available"
  
     let butn2 = document.createElement("button")
@@ -58,7 +56,6 @@ function createPurseCard(purse) {
    
 
     content.append(h4, p1, p2, p3, p4, p5, butn1, butn2, butn3, butn4)
-    console.log
     card.append(purseImage, content)
     //add pusre to DOM
     document.querySelector("#square").appendChild(card)
@@ -75,13 +72,14 @@ function createPurseCard(purse) {
         else {
           document.getElementById("editForm-Container").style.visibility = "visible"  
         }
+        console.log("this is",purse.desc)
         document.getElementById("brand").value = purse.brand
         document.getElementById("style").value = purse.style
         document.getElementById("color").value = purse.color
         document.getElementById("size").value = purse.size
         document.getElementById("purseImg").value = purse.img
         document.getElementById("condition").value = purse.condition
-        document.getElementById("desc").value = purse.description
+        document.getElementById("desc").value = purse.desc
         document.getElementById("price").value = purse.price
         document.getElementById("jId").value = purse.id
     }
@@ -93,7 +91,8 @@ document.getElementById("addPurseInfo").addEventListener("submit", (e) => {
         updatePurseData(purseObj)
     })
     
-function contactSeller() {
+    function contactSeller() {
+    console.log("Do you get here", purse.id, purse.email)
     if (document.getElementById("email").style.visibility === "visible"){
             document.getElementById("email").style.visibility = "hidden"
     }
@@ -136,10 +135,6 @@ function contactSeller() {
 } //createPurseCard
 // document.getElementById(`card-${purse.id}`).addEventListener("mouseover", mouseOver)
 // document.getElementById(`card-${purse.id}`).addEventListener("mouseout", mouseOut)
-
-function mouseOver() {
-       console.log(`desc-${purse.id}`) 
-    }
 
 document.getElementById("addPurseButn").addEventListener("click", (e) => {
     if (document.getElementById("addForm-Container").style.visibility === "visible") {
