@@ -48,6 +48,11 @@ function createPurseCard(purse) {
     butn4.id = `butn4-${purse.id}`
     butn4.textContent = "Seller"
 
+    let email = document.createElement("a")
+    email.id = `email-${purse.id}`
+    email.href = `mailto:${purse.email}`
+    //email.textContent="Send Email"
+  
     butn1.addEventListener("click", toggleAvailable)
     butn2.addEventListener("click", editCard)
     butn3.addEventListener("click", deleteCard)
@@ -55,7 +60,7 @@ function createPurseCard(purse) {
     purseImage.addEventListener("click", displayDesc)
    
 
-    content.append(h4, p1, p2, p3, p4, p5, butn1, butn2, butn3, butn4)
+    content.append(h4, p1, p2, p3, p4, p5, butn1, butn2, butn3, butn4, email)
     card.append(purseImage, content)
     //add pusre to DOM
     document.querySelector("#square").appendChild(card)
@@ -92,16 +97,11 @@ document.getElementById("addPurseInfo").addEventListener("submit", (e) => {
     })
     
     function contactSeller() {
-    console.log("Do you get here", purse.id, purse.email)
-    if (document.getElementById("email").style.visibility === "visible"){
-            document.getElementById("email").style.visibility = "hidden"
+        console.log(document.getElementById(`email-${purse.id}`))
+        window.location = `mailto:${purse.email}`
+        
     }
-    else {
-        document.getElementById("email").style.visibility = "visible"
-       // document.getElementById("firstName").value = purse.firstName
-        document.getElementById("emailSel").value = purse.email
-    }
-}   
+   
     function toggleAvailable(e) {
         console.log(purse.id)
         if (e.target.innerText === "Available") {
