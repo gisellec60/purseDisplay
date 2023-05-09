@@ -16,7 +16,7 @@ body {
  height:500px;
  background-position:center;
  background-size:cover;
- 
+ background-attachment:fixed;
 }
 
 html {
@@ -63,7 +63,7 @@ pre.sibling-element {
   padding:5px 25px 25px;
   border: 2px;
   margin-left:30px;
-  top:160px;
+  top:200px;
   font-weight:bolder;
   justify-content:center;
   align-items:center;
@@ -187,7 +187,7 @@ input[type=submit]:hover {
 #addPurseButn{
   background-color: #d3d7de;
   position: relative;
-  top: -1270px;
+  top: -1250px;
   left:750px;
   font-weight:bold;
 }
