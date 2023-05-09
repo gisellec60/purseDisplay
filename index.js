@@ -54,8 +54,8 @@ function createPurseCard(purse) {
     butn2.addEventListener("click", editCard)
     butn3.addEventListener("click", deleteCard)
     butn4.addEventListener("click", contactSeller)
-    purseImage.addEventListener("mouseover", mouseOver)
-    purseImage.addEventListener("mouseout", mouseOut)
+    purseImage.addEventListener("click", displayDesc)
+   
 
     content.append(h4, p1, p2, p3, p4, p5, butn1, butn2, butn3, butn4)
     console.log
@@ -118,16 +118,17 @@ function contactSeller() {
         }
     }    
 
-    // document.getElementById(`card-${purse.id}`).addEventListener("click", mouseOver)
-    // document.getElementById(`card-${purse.id}`).addEventListener("click", mouseOut)
-
-     function mouseOver() {
-         console.log(`desc-${purse.id}`) 
-         console.log(purse.desc)
-     }
+    function displayDesc() {
+        if (document.getElementById("square").style.visibility === "") {
+            document.getElementById("square").style.visibility = "hidden"
+            document.getElementById("displayDesc").style.visibility = "visible"
+            document.getElementById("displayDesc").textContent = purse.desc
+        }
+    }
     
     function mouseOut() {
-       console.log(`desc-${purse.id}`) 
+        document.getElementById("square").style.visibility = "visible"
+        document.getElementById("displayDesc").style.visibility ="hidden"
      }
     
 } //createPurseCard
