@@ -122,15 +122,17 @@ function contactSeller() {
         if (document.getElementById("square").style.visibility === "") {
             document.getElementById("square").style.visibility = "hidden"
             document.getElementById("displayDesc").style.visibility = "visible"
+            document.getElementById("closeButn").style.visibility="visible"
             document.getElementById("displayDesc").textContent = purse.desc
         }
     }
     
-    function mouseOut() {
-        document.getElementById("square").style.visibility = "visible"
-        document.getElementById("displayDesc").style.visibility ="hidden"
-     }
-    
+    document.getElementById("closeButn").addEventListener("click", (e) => {
+        document.getElementById("square").style.visibility = ""
+        document.getElementById("displayDesc").style.visibility = "hidden"
+        document.getElementById("closeButn").style.visibility="hidden"
+    })
+       
 } //createPurseCard
 // document.getElementById(`card-${purse.id}`).addEventListener("mouseover", mouseOver)
 // document.getElementById(`card-${purse.id}`).addEventListener("mouseout", mouseOut)
