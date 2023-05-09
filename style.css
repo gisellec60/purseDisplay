@@ -7,18 +7,16 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    height: 100%;
+    height: 1000vh;
     background-attachment:scroll;
 }
 
 .bg-Image{
-/* Full height */
-  height: 50%; 
-  
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+ width:100%;
+ height:500px;
+ background-position:center;
+ background-size:cover;
+ background-attachment:fixed;
 }
 
 html {
@@ -33,7 +31,7 @@ h1 {
     line-height:5%;
     height: 10px;
     border: 2px;
-    left:480px;
+    left:380px;
     border-radius:12px;
     margin-left:100px;
     top:5px;
@@ -49,7 +47,7 @@ pre.sibling-element {
     line-height: 15px;
     color:rgb(28, 25, 25);
     top:97px;
-    left: 690px;
+    left:600px;
     font-style: italic;
 }
 
@@ -67,7 +65,8 @@ pre.sibling-element {
   margin-left:30px;
   top:200px;
   font-weight:bolder;
-  left:245px;
+  justify-content:center;
+  align-items:center;
   visibility:visible;
  }
 
@@ -78,7 +77,8 @@ pre.sibling-element {
   margin:2%;
   width:250px;
   border-radius:25px;
-  text-align:center
+  text-align:center;
+
 }
 
 .card:hover {
@@ -165,16 +165,16 @@ input[type=submit]:hover {
 }
 
 #displayDesc {
-  position:relative;
+  position:absolute;
   background-color: #a8bae2;
   background-color: #d3d7de;
   width:500px;
   height:200px;
-  left:500px;
+  left:520px;
   padding:5px 25px 25px;
   border: 2px;
   margin-left:30px;
-  top:-900px;
+  top:200px;
   font-weight:bolder;
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   visibility:hidden;
@@ -188,13 +188,14 @@ input[type=submit]:hover {
   background-color: #d3d7de;
   position: relative;
   top: -1250px;
-  left:850px;
+  left:750px;
   font-weight:bold;
 }
 
 #closeButn{
-  position: relative;
-  top: -2250px;
-  left:980px;
+  position: absolute;
+  background-color: #d3d7de;
+  top: 370px;
+  left: 990px;
   visibility:hidden;
 }
