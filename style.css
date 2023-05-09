@@ -1,26 +1,26 @@
 /* @import:unpkg.com/open-props
 @import:unpkg.com/open-props/normalize.min.css */
-* {
-  box-sizing:border-box;
-}
+
 body {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
     height: 1000vh;
+    overflow-x:hidden;
     background-attachment:scroll;
 }
 
 .bg-Image{
  width:100%;
- height:500px;
+ height:1500px;
  background-position:center;
  background-size:cover;
  
 }
 
 html {
-  height : 800px;
+  height : 100%;
+  overflow-x:hidden;
 }
 
 h1 {
@@ -78,7 +78,6 @@ pre.sibling-element {
   width:250px;
   border-radius:25px;
   text-align:center;
-
 }
 
 .card:hover {
