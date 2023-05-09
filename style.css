@@ -53,13 +53,14 @@ pre.sibling-element {
   padding:5px 25px 25px;
   border: 2px;
   margin-left:30px;
-  top:-1000px;
+  top:-1100px;
   font-weight:bolder;
   left:85px;
  }
 
 .card{
-  background-color:rgba(42, 115, 233, 0.967);
+   background-color:rgba(42, 115, 233, 0.967);
+   background-color: #d3d7de;
   margin:2%;
   width:250px;
   border-radius:25px;
@@ -70,8 +71,8 @@ pre.sibling-element {
   height:80px;
 }
 
-1.purseImage:hover {
-  transform: scale(1.0 do);
+purseImage:hover {
+  transform: scale(1.0);
   margin-left:100px;
   margin-top:50px;
   width:500px;
@@ -182,16 +183,18 @@ div#emil{
 
 #displayDesc {
   position:relative;
+  transform: skew(20deg);
   background-color: #a8bae2;
   width:200px;
   height:100px;
+  left:600px;
   padding:5px 25px 25px;
   border: 2px;
   margin-left:30px;
-  top:140px;
+  top:-1000px;
   font-weight:bolder;
-  display:none
-}
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+ }
 
 #jId{
   visibility:hidden;
