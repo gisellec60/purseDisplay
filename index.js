@@ -25,7 +25,7 @@ function createPurseCard(purse) {
     p5.textContent = `price: $${purse.price}.00`
     let p6 = document.createElement("p")
     p6.id = `desc-${purse.id}`
-    p6.textContent = `description: ${purse.description}`
+    p6.textContent = `desc: ${purse.description}`
     
     let butn1 = document.createElement("button")
     butn1.className = "avail"
@@ -72,13 +72,14 @@ function createPurseCard(purse) {
         else {
           document.getElementById("editForm-Container").style.visibility = "visible"  
         }
+        console.log("this is",purse.desc)
         document.getElementById("brand").value = purse.brand
         document.getElementById("style").value = purse.style
         document.getElementById("color").value = purse.color
         document.getElementById("size").value = purse.size
         document.getElementById("purseImg").value = purse.img
         document.getElementById("condition").value = purse.condition
-        document.getElementById("desc").value = purse.description
+        document.getElementById("desc").value = purse.desc
         document.getElementById("price").value = purse.price
         document.getElementById("jId").value = purse.id
     }
