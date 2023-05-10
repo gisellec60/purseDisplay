@@ -131,7 +131,7 @@ input[type=submit]:hover {
   padding: 20px;
   border-radius:25px;
   right: 200px;
-  top:-30px;
+  top:-75px;
   visibility: hidden;
 }
 #editForm-Container {
@@ -141,7 +141,7 @@ input[type=submit]:hover {
   padding: 20px;
   border-radius:25px;
   left: 200px;
-  top:-30px;
+  top:-60px;
   visibility: hidden;
 }
 
