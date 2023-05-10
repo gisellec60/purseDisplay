@@ -46,7 +46,7 @@ pre.sibling-element {
     line-height: 15px;
     color:rgb(28, 25, 25);
     top:90px;
-    left:600px;
+    left:580px;
     font-style: italic;
 }
 .brand{
@@ -74,8 +74,7 @@ pre.sibling-element {
  }
 
 .card{
-  background:#d1e7e4 url('http://wizzley.com/static/img/bg/texture8.png');
-  background:#ebc3ec url('http://wizzley.com/static/img/bg/texture8.png');
+  background:#eed0ef url('http://wizzley.com/static/img/bg/texture8.png');
   margin:2%;
   width:250px;
   border-radius:25px;
@@ -185,7 +184,7 @@ input[type=submit]:hover {
   background-color: #d3d7de;
   position: relative;
   top: -870px;
-  left:750px;
+  left:735px;
   font-weight:bold;
 }
 
@@ -208,11 +207,11 @@ input[type=submit]:hover {
 
 #text::before{
   content: "***";
-  color:rgb(29, 76, 151);
+  color:rgb(196, 59, 171);
 }
 
 #text::after{
   content:"***";
-  color:rgb(29, 76, 151);
+  color:rgb(196, 59, 171);
 }
 
