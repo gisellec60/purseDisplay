@@ -33,19 +33,18 @@ h1 {
     left:500px;
     border-radius:12px;
     margin-left:100px;
-    top:5px;
+    top:25px;
       
 }
 
 pre.sibling-element {
     position : absolute;
     font-weight:bolder;
-    
     font-family:Arial, Helvetica, sans-serif;
     font-size: 15px;
     line-height: 15px;
     color:rgb(28, 25, 25);
-    top:97px;
+    top:110px;
     left:600px;
     font-style: italic;
 }
@@ -62,7 +61,7 @@ pre.sibling-element {
   padding:5px 25px 25px;
   border: 2px;
   margin-left:30px;
-  top:180px;
+  top:220px;
   font-weight:bolder;
   
   left:95px;
@@ -75,7 +74,7 @@ pre.sibling-element {
   width:250px;
   border-radius:25px;
   text-align:center;
-  height:600px;
+  height:565px;
  }
 
 .purseImage{
@@ -178,7 +177,7 @@ input[type=submit]:hover {
 #addPurseButn{
   background-color: #d3d7de;
   position: relative;
-  top: -1270px;
+  top: -1250px;
   left:750px;
   font-weight:bold;
 }
@@ -195,7 +194,7 @@ input[type=submit]:hover {
 }
 #text{
   position:absolute;
-  top:160px;
+  top:195px;
   left:630px;
   font-weight: bold;
 }
