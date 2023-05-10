@@ -69,13 +69,12 @@ pre.sibling-element {
  }
 
 .card{
-  background-color:rgba(42, 115, 233, 0.967);
-  background: url('http://i.stack.imgur.com/oslRB.png');
+  background:#d1e7e4 url('http://wizzley.com/static/img/bg/texture8.png');
   margin:2%;
   width:250px;
   border-radius:25px;
   text-align:center;
-  height:550px;
+  height:600px;
  }
 
 .purseImage{
@@ -124,8 +123,7 @@ input[type=submit]:hover {
 #addForm-Container {
   position:absolute;
   border-radius: 5px;
-  background-color: #2a67ec;
-  background-color: #becee8;
+  background-color: #d1e7e4;
   padding: 20px;
   border-radius:25px;
   right: 200px;
@@ -135,8 +133,7 @@ input[type=submit]:hover {
 #editForm-Container {
   position:absolute;
   border-radius: 5px;
-  background-color: #2a67ec;
-  background-color: #becee8;
+  background-color: #d1e7e4;
   padding: 20px;
   border-radius:25px;
   left: 200px;
