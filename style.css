@@ -70,18 +70,17 @@ pre.sibling-element {
 
 .card{
   background-color:rgba(42, 115, 233, 0.967);
-  background-color: #d3d7de;
-  background-color: #d1e7e4;
+  background: url('http://i.stack.imgur.com/oslRB.png');
   margin:2%;
   width:250px;
   border-radius:25px;
   text-align:center;
-  height:500px;
+  height:550px;
  }
 
 .purseImage{
-  width:100px;
-  height:80px;
+  width:200px;
+  height:200px;
 }
 
 .list-purse {
