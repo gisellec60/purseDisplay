@@ -130,6 +130,7 @@ input[type=submit]:hover {
   position:absolute;
   border-radius: 5px;
   background-color: #d1e7e4;
+  background-color: #cd8dc3;
   padding: 20px;
   border-radius:25px;
   right: 200px;
@@ -140,6 +141,7 @@ input[type=submit]:hover {
   position:absolute;
   border-radius: 5px;
   background-color: #d1e7e4;
+  background-color: #cd8dc3;
   padding: 20px;
   border-radius:25px;
   left: 200px;
