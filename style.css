@@ -56,12 +56,13 @@ pre.sibling-element {
   flex-wrap:wrap;
   position:absolute;  
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  line-height: 16px;
+  line-height: 25px;
+  font-size:.7rem;
   width:1560px;
   padding:5px 25px 25px;
   border: 2px;
   margin-left:30px;
-  top:225px;
+  top:180px;
   font-weight:bolder;
   
   left:95px;
@@ -194,7 +195,7 @@ input[type=submit]:hover {
 }
 #text{
   position:absolute;
-  top:200px;
+  top:160px;
   left:630px;
   font-weight: bold;
 }

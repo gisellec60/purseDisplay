@@ -20,9 +20,9 @@ function createPurseCard(purse) {
     let p3 = document.createElement("p")
     p3.textContent = `Size: ${purse.size}`
     let p4 = document.createElement("p")
-    p4.textContent = `condition: ${purse.condition}`
+    p4.textContent = `Condition: ${purse.condition}`
     let p5 = document.createElement("p")
-    p5.textContent = `price: $${purse.price}.00`
+    p5.textContent = `Price: $${purse.price}.00`
     let p6 = document.createElement("p")
     p6.id = `desc-${purse.id}`
     p6.textContent = `desc: ${purse.description}`
