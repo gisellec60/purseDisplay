@@ -160,8 +160,8 @@ input[type=submit]:hover {
 
 #displayDesc {
   position:absolute;
-  background-color: #a8bae2;
-  background-color: #d3d7de;
+  background-color:rgb(67, 102, 158);
+  color:#d1e7e4;
   width:500px;
   height:200px;
   left:520px;
@@ -199,7 +199,17 @@ input[type=submit]:hover {
 #text{
   position:absolute;
   top:200px;
-  left:660px;
+  left:630px;
   font-weight: bold;
+}
+
+#text::before{
+  content: "***";
+  color:rgb(29, 76, 151);
+}
+
+#text::after{
+  content:"***";
+  color:rgb(29, 76, 151);
 }
 
