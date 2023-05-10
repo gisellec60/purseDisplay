@@ -93,44 +93,31 @@ function createPurseCard(purse) {
         else {
             document.getElementById("editForm-Container").style.visibility = "visible"
         }
-        //console.log("before", purse)
         //enter information into the edit form
         document.getElementById("purseBrand").value = purse.brand
-        //console.log(purse.brand)
         document.getElementById("style").value = purse.style
-        // console.log(purse.style)
         document.getElementById("color").value = purse.color
-        // console.log(purse.color)
         document.getElementById("size").value = purse.size
-        // console.log(purse.size)
         document.getElementById("purseImg").value = purse.img
-        // console.log(purse.img)
         document.getElementById("condition").value = purse.condition
-        // console.log(purse.condition)
         document.getElementById("desc").value = purse.desc
-        // console.log(purse.desc)
         document.getElementById("price").value = purse.price
-        // console.log(purse.price)
         document.getElementById("emailSeller").value = purse.email
-        // console.log(purse.email)
         document.getElementById("jId").value = purse.id
-       
+       //submit information to the editPurseObj to create an updated Obj        
         document.getElementById("addPurseInfo").addEventListener("submit", (e) => {
             e.preventDefault()
-            console.log(document.getElementById("emailSeller").value)
             document.getElementById("editForm-Container").style.visibility = "hidden"
-            console.log("before again", purse)
             let purseObj = editPurseObj()
-            console.log("after", purseObj)
+            //upate purse data on server
             updatePurseData(purseObj)
         })
     }   
-    
+    //Send email to seller. 
     function contactSeller() {
        window.location = `mailto:${purse.email}?Subject=${purse.brand}: ${purse.style}`
-        
     }
-   
+    //toggle between available and unavialble
     function toggleAvailable(e) {
         console.log(purse.id)
         if (e.target.innerText === "Available") {
@@ -145,7 +132,7 @@ function createPurseCard(purse) {
             document.getElementById(`butn4-${purse.id}`).disabled = false;
         }
     }    
-
+    //display description when purse image is clicked. 
     function displayDesc() {
         if (document.getElementById("square").style.visibility === "") {
             document.getElementById("square").style.visibility = "hidden"
@@ -154,7 +141,7 @@ function createPurseCard(purse) {
             document.getElementById("displayDesc").textContent = purse.desc
         }
     }
-    
+    // close descripton box when the close button is clicked
     document.getElementById("closeButn").addEventListener("click", (e) => {
         document.getElementById("square").style.visibility = ""
         document.getElementById("displayDesc").style.visibility = "hidden"
@@ -162,8 +149,9 @@ function createPurseCard(purse) {
     })
        
 } //createPurseCard
+//get all purses from server
 getAllPurses()
-
+// make add purse form visible
 document.getElementById("addPurseButn").addEventListener("click", (e) => {
     if (document.getElementById("addForm-Container").style.visibility === "visible") {
         document.getElementById("addForm-Container").style.visibility = "hidden"
@@ -171,12 +159,12 @@ document.getElementById("addPurseButn").addEventListener("click", (e) => {
     else {
         document.getElementById("addForm-Container").style.visibility = "visible"
     }
-})     
+})   
+//submit data to create purse object then to then to be added to server 
 document.getElementById("addPurseData").addEventListener("submit", (e) => {
         e.preventDefault()
         document.getElementById("addForm-Container").style.visibility = "hidden"
         let purseObj = createPurseObj()
-        console.log(purseObj)
         addPurseCard(purseObj)
 })
 //create new object with updated   
@@ -195,6 +183,7 @@ function editPurseObj() {
     }
     return purseObj
 }
+//Create new Object and send to server
 function createPurseObj () {    
     let purseObj = {
         id:document.getElementById("add-jId").value,
@@ -208,7 +197,6 @@ function createPurseObj () {
         price: document.getElementById("add-price").value,
         email:document.getElementById("add-emailSeller").value
     }
-    console.log(purseObj)
     return purseObj
 }
 //Fetch Requests
@@ -224,6 +212,7 @@ function getAllPurses() {
         .then(purseData => purseData.forEach(purse => createPurseCard(purse)))
 }
 
+//Get a particular card from server
 function getPurseObject(id) {
     console.log("what is id",id)
     fetch(`http://localhost:3000/purseData/${id}`)
@@ -233,7 +222,7 @@ function getPurseObject(id) {
           return res
         })
         .then(res => res.json())
-        .then(purseData => console.log("data from server", purseData))
+        .then(purseData => console.log(purseData))
 }
 
     // This adds new cards to the server.
