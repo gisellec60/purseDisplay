@@ -1,42 +1,6 @@
 {
   "purseData": [
     {
-      "id": 1,
-      "brand": "Jimmy Choo",
-      "style": "Bucket",
-      "color": "pink",
-      "size": "small",
-      "img": "https://media.jimmychoo.com/image/upload/q_auto:best,f_auto,dpr_2.0,w_900,h_900,c_fit/USPROD_PRODUCT/images/original/BONBONBUCKETSHUT_112562_FRONT_vg04.jpg",
-      "desc": "Crafted from candy pink soft shiny calf leather, the small BON BON Bucket has a sculptural shape defined by a drawstring fastening and light gold hardware. Carry in hand using the leather and metal bracelet top handle consistent with the BON BON family, or use the adjustable and detachable leather strap to wear on the shoulder or cross-body.  Shiny calf leather Leather and metal top handle Drawstring closure Interior pocket Bag measures: L17 x H17.5 x W11cm Adjustable and detachable leather strap measures: 47cm Made in Italy By purchasing this product, you are supporting sustainable leather manufacturing through the Leather Working Groupndefined",
-      "condition": "new",
-      "price": "700",
-      "email": "allmybags@mypurse.com"
-    },
-    {
-      "id": 2,
-      "brand": "Coach",
-      "style": "Lori Shoulder Bag",
-      "color": "Brass/Canyon Multi",
-      "size": "Medium",
-      "img": "https://images.coach.com/is/image/Coach/c5265_b4mpl_a0?$desktopProduct$",
-      "desc": "Soft pebble leather and suede Inside snap pocket Center zip compartment Magnetic snap closure, fabric lining Adjustable handles with 11\" drop Outside zip pocket Four protective feet at base 12 1/4\" (L) x 10 1/4\" (H) x 6\" (W) Style No. C5265",
-      "condition": "new",
-      "price": "900",
-      "email": "allmybags@mypurse.com"
-    },
-    {
-      "brand": "Celine",
-      "style": "Ava Bag in Smooth Calfskin",
-      "color": "Tan",
-      "size": "Medium",
-      "img": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQXBzeij04RjU_VxK1_ousQyBlL9K32I5yl6dfyI4_ioxAmWEWGYVEb5VLaABL91r6nyWjq2Q_tLAsS71iY9bffma7dRRfp_zhvy0D9Bs80qvaQwBJiiRgGguJDLj_LmEA-vQ&usqp=CAc",
-      "condition": "new",
-      "price": 2300,
-      "desc": "9 X 5 X 2 IN (23 X 13.5 X 6 CM),TRIOMPHE CANVAS, TRIMMINGS IN CALFSKIN,TEXTILE LINING,GOLD FINISHING,SHOULDER AND HAND CARRY,ZIPPED CLOSURE,ONE INNER FLAT POCKET,ADJUSTABLE STRAP WITH A MINIMUM DROP 8 IN (22 CM) AND MAXIMUM DROP 9 IN (23 CM),REFERENCE : 193952BZJ.04LU",
-      "email": "guy@sas.com",
-      "id": 3
-    },
-    {
       "id": 4,
       "brand": "Louis Vuitton",
       "style": "Grace MM",
@@ -61,54 +25,6 @@
       "email": "Miriam@outlook.com"
     },
     {
-      "id": 6,
-      "brand": "Chloe",
-      "style": "Marcie double carry bag",
-      "color": "Tan Leather",
-      "size": "Medium",
-      "img": "https://www.chloe.com/product_image/45661616ft/f/w1080.jpg",
-      "desc": "Double carry bag in grained calfskin Carry: hand & long shoulder or cross-body  - 1 Roomy compartment - 1 Front slip pocket hidden by the flap - 1 Internal zippered pocket - Removable leather strap - Antique gold finishing - Linen lining Comes with a dust bag  - Width: 14.2” (36 cm) - Height: 11.0\" (28 cm) - Depth: 4.7\" (12 cm) - Min. strap drop: 18.1\" (46 cm) - Max. strap drop: 21.6” (55 cm)  This double carry bag is made from semi-aniline leather. Tanning imparts a specific character to the skin, such as hues and wrinkles, combined with a light and transparent aniline finish. Respect care instructions on the leaflet.  To make this product, Chloe worked with Leather Working Group (LWG) certified leather manufacturers. LWG certifies tanneries based on their water and energy usage, management of chemicals, solid waste, and wastewater.",
-      "condition": "new",
-      "price": "2490",
-      "email": "Miriam@outlook.com"
-    },
-    {
-      "id": 7,
-      "brand": "Kate Spade",
-      "style": "Everything Racing Stripe Faux",
-      "color": "Cream Multi",
-      "size": "Medium",
-      "img": "https://images.katespade.com/is/image/KateSpade/K9937_250?$desktopProduct$",
-      "desc": "11.02\"h x 12.6”w x 6.69”d Handle drop: 5.5\" Faux shearling with jacquard stripe Faille lining Pinmount logo Tote with tie closure Interior zip pocket Interior slip pocket Fits current iPhone, iPad, A4 binder, 13” laptop",
-      "condition": "new",
-      "price": "278",
-      "email": "Miriam@outlook.com"
-    },
-    {
-      "id": 8,
-      "brand": "Catier",
-      "style": "PANTHÈRE DE CARTIER BAG, CHAIN BAG",
-      "color": "Red",
-      "size": "Small",
-      "img": "https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dwe8d99b67/images/large/638133997899740287-2433710.png?sw=750&sh=750&sm=fit&sfrm=png",
-      "desc": "Mini chain bag in burgundy calfskin, burgundy leather and golden-finish clasp, golden hot-stamped “Cartier” signature inside. Three inside compartments, one flat pocket and one signature pocket with removable mirror. Lining: black lambskin. Dimensions: 140 mm high x 200 mm wide x 85 mm deep. Shoulder and cross-body carry. Read Less",
-      "condition": "new",
-      "price": "3150",
-      "email": "Miriam@outlook.com"
-    },
-    {
-      "id": 9,
-      "brand": "Valentino",
-      "style": "SMALL VSLING GRAINY CALFSKIN HANDBAG",
-      "color": "Light Blue",
-      "size": "small",
-      "img": "https://valentino-cdn.thron.com/delivery/public/image/valentino/8b133fc8-6b16-423b-b4a4-5ad7cf930688/ihqstx/std/2000x0/SMALL-VSLING-GRAINY-CALFSKIN-HANDBAG?quality=80&size=35&format=auto",
-      "desc": "Small Valentino Garavani VSLING grainy calfskin leather handbag with VLogo Signature closure. Equipped with an extendable shoulder strap, this accessory can be worn as a crossbody/shoulder bag, or carried in the hand using the handle. - Antique-brass-finish metal hardware - Magnetic closure with leather-covered logo - Leather shoulder strap with adjustable chain - Protective feet - Nappa lining - Interior: red zipper pocket - Dimensions: W22xH17xD9 cm / W8.7xH6.7xD3.5 in. - Made in Italy",
-      "condition": "new",
-      "price": "3250",
-      "email": "nancy@gmail.com"
-    },
-    {
       "id": 10,
       "brand": "Bvlgari",
       "style": "SERPENTI FOREVER CHAIN WALLET",
@@ -125,12 +41,12 @@
       "brand": "Hermes",
       "style": "Birkin Handbag Bicolor Clemence with Palladium",
       "color": "Bicolor- Sanguine/Blanc",
-      "size": "",
-      "img": "https://cdn.shopify.com/s/files/1/0384/0161/products/204906-1_20Hermes_20Birkin_20Handbag_20Bicolor_20Clemence_20with_20Palladium_20Hardware_2030_2D_0003_508x508.jpg?v=1679082050",
+      "size": "Medium",
+      "img": "https://prod-images.fashionphile.com/large/c49f6758213cfa27f6c49b0263975942/a31b62a3c53f5077fccbfea34d0491b0.jpg",
       "desc": "Hermes Color Bicolor- Sanguine/Blanc Exterior Material Leather Interior Material Leather Hardware Color Palladium Accessories Clochette Keys Lock Dust bag",
-      "condition": "Creasing, wear and scuffs on exterior and handles, cracking on flap opening corner wax edges. Bubbling and light wear in interior, scratches on hardware.",
+      "condition": "Exterior: Corner wear, creases, scuffs, structure wear, smoothing of leather, edge wear, marks, imprints, wear at resin glazing, surface wear  Handle: Surface wear, creases, scuffs, marks  Interior: Creases, scuffs, surface wear, marks, imprints, edge wear  Hardware: Scratch(es)Creasing, wear and scuffs on exterior and handles, cracking on flap opening corner wax edges. Bubbling and light wear in interior, scratches on hardware.",
       "price": "11500",
-      "email": "hermesgirl@icloud.com"
+      "email": ""
     },
     {
       "id": 12,

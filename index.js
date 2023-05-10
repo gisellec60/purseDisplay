@@ -12,6 +12,7 @@ function createPurseCard(purse) {
     content.className = "purse"
 
     let h4 = document.createElement("h4")
+    h4.className="brand"
     h4.textContent = `${purse.brand}`
     let p1 = document.createElement("p")
     p1.textContent = `${purse.style}`
