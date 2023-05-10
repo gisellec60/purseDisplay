@@ -65,7 +65,7 @@ pre.sibling-element {
   padding:5px 25px 25px;
   border: 2px;
   margin-left:30px;
-  top:200px;
+  top:180px;
   font-weight:bolder;
   
   left:85px;
@@ -79,6 +79,7 @@ pre.sibling-element {
   border-radius:25px;
   text-align:center;
   height:565px;
+  top:100px;
  }
 
 .purseImage{
@@ -198,7 +199,7 @@ input[type=submit]:hover {
 }
 #text{
   position:absolute;
-  top:195px;
+  top:165px;
   left:630px;
   font-weight: bold;
 }
