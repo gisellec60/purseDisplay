@@ -12,26 +12,34 @@ function createPurseCard(purse) {
     content.className = "purse"
 
     let h4 = document.createElement("h4")
-    h4.className="brand"
+    h4.className = "brand"
+    h4.id=`brand-${purse.id}`
     h4.textContent = `${purse.brand}`
+
     let p1 = document.createElement("p")
+    p1.id=`style-${purse.id}`
     p1.textContent = `${purse.style}`
+
     let p2 = document.createElement("p")
-    p2.textContent = `Color: ${purse.color}`
+    p2.id=`color-${purse.id}`
+    p2.textContent = `Color:${purse.color}`
+    
     let p3 = document.createElement("p")
+    p3.id=`size-${purse.id}`
     p3.textContent = `Size: ${purse.size}`
+
     let p4 = document.createElement("p")
+    p4.id=`condition-${purse.id}`
     p4.textContent = `Condition: ${purse.condition}`
+    
     let p5 = document.createElement("p")
+    p5.id=`price-${purse.id}`
     p5.textContent = `Price: $${purse.price}.00`
+    
     let p6 = document.createElement("p")
     p6.id = `desc-${purse.id}`
     p6.textContent = `desc: ${purse.description}`
-    let p7 = document.createElement("p")
-    p7.id = `msg-${purse.id}`
-    p7.className="message"
-    p7.textContent = "Click on picture for more informaton"
-
+   
     let butn1 = document.createElement("button")
     butn1.className = "avail"
     butn1.id = `butn1-${purse.id}`
@@ -65,7 +73,7 @@ function createPurseCard(purse) {
     purseImage.addEventListener("click", displayDesc)
    
 
-    content.append(h4, p1,p3, p4, p5,butn1, butn2, butn3, butn4, email)
+    content.append(h4, p1, p2, p3, p4, p5,butn1, butn2, butn3, butn4, email)
     card.append(purseImage, content)
     //add pusre to DOM
     document.querySelector("#square").appendChild(card)
@@ -76,34 +84,50 @@ function createPurseCard(purse) {
     }
     
     function editCard() {
+        //get the card information from the server:
+        getPurseObject(purse.id)
+        //make Edit Form visible
         if (document.getElementById("editForm-Container").style.visibility === "visible") {
             document.getElementById("editForm-Container").style.visibility = "hidden"
         }
         else {
-          document.getElementById("editForm-Container").style.visibility = "visible"  
+            document.getElementById("editForm-Container").style.visibility = "visible"
         }
-        console.log("this is",purse.desc)
-        document.getElementById("brand").value = purse.brand
+        //console.log("before", purse)
+        //enter information into the edit form
+        document.getElementById("purseBrand").value = purse.brand
+        //console.log(purse.brand)
         document.getElementById("style").value = purse.style
+        // console.log(purse.style)
         document.getElementById("color").value = purse.color
+        // console.log(purse.color)
         document.getElementById("size").value = purse.size
+        // console.log(purse.size)
         document.getElementById("purseImg").value = purse.img
+        // console.log(purse.img)
         document.getElementById("condition").value = purse.condition
+        // console.log(purse.condition)
         document.getElementById("desc").value = purse.desc
+        // console.log(purse.desc)
         document.getElementById("price").value = purse.price
+        // console.log(purse.price)
+        document.getElementById("emailSeller").value = purse.email
+        // console.log(purse.email)
         document.getElementById("jId").value = purse.id
-    }
-
-document.getElementById("addPurseInfo").addEventListener("submit", (e) => {
-        e.preventDefault()
-        document.getElementById("editForm-Container").style.visibility = "hidden"
-        let purseObj = editPurseObj(purse)
-        updatePurseData(purseObj)
-    })
+       
+        document.getElementById("addPurseInfo").addEventListener("submit", (e) => {
+            e.preventDefault()
+            console.log(document.getElementById("emailSeller").value)
+            document.getElementById("editForm-Container").style.visibility = "hidden"
+            console.log("before again", purse)
+            let purseObj = editPurseObj()
+            console.log("after", purseObj)
+            updatePurseData(purseObj)
+        })
+    }   
     
     function contactSeller() {
-        console.log(document.getElementById(`email-${purse.id}`))
-        window.location = `mailto:${purse.email}?Subject=${purse.brand}: ${purse.style}`
+       window.location = `mailto:${purse.email}?Subject=${purse.brand}: ${purse.style}`
         
     }
    
@@ -138,6 +162,8 @@ document.getElementById("addPurseInfo").addEventListener("submit", (e) => {
     })
        
 } //createPurseCard
+getAllPurses()
+
 document.getElementById("addPurseButn").addEventListener("click", (e) => {
     if (document.getElementById("addForm-Container").style.visibility === "visible") {
         document.getElementById("addForm-Container").style.visibility = "hidden"
@@ -153,11 +179,11 @@ document.getElementById("addPurseData").addEventListener("submit", (e) => {
         console.log(purseObj)
         addPurseCard(purseObj)
 })
-    
-function editPurseObj () {    
+//create new object with updated   
+function editPurseObj() { 
     let purseObj = {
         id:document.getElementById("jId").value,
-        brand: document.getElementById("brand").value,
+        brand: document.getElementById("purseBrand").value,
         style: document.getElementById("style").value,
         color: document.getElementById("color").value,
         size: document.getElementById("size").value,
@@ -167,7 +193,6 @@ function editPurseObj () {
         price: document.getElementById("price").value,
         email:document.getElementById("emailSeller").value
     }
-    console.log(purseObj)
     return purseObj
 }
 function createPurseObj () {    
@@ -185,8 +210,9 @@ function createPurseObj () {
     }
     console.log(purseObj)
     return purseObj
-}    //Fetch Requests
-    //Using Get fetch all the pursedata
+}
+//Fetch Requests
+//Using Get fetch all the pursedata
 function getAllPurses() {
     fetch("http://localhost:3000/purseData")
         .then(res => {
@@ -197,8 +223,18 @@ function getAllPurses() {
         .then(res => res.json())
         .then(purseData => purseData.forEach(purse => createPurseCard(purse)))
 }
-   // fetch add purse to the DOM
-getAllPurses()
+
+function getPurseObject(id) {
+    console.log("what is id",id)
+    fetch(`http://localhost:3000/purseData/${id}`)
+        .then(res => {
+          if (res.ok) { console.log("GET request successful!!!") }
+          else { console.log("GET request unsuccessful") }
+          return res
+        })
+        .then(res => res.json())
+        .then(purseData => console.log("data from server", purseData))
+}
 
     // This adds new cards to the server.
 function addPurseCard(purseObj) {
