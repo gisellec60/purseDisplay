@@ -24,8 +24,8 @@ html {
 
 h1 {
     position:absolute;
-    text-shadow:3px 3px #AAAAAA;
-    text-shadow:3px 3px #4c61e6;
+    text-shadow:4px 4px #AAAAAA;
+    background-color: #d1e7e4;
     font-size: 73px;
     line-height:5%;
     height: 10px;
