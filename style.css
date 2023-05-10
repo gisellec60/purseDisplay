@@ -19,7 +19,7 @@ body {
 
 html {
   height : 100%;
-  overflow-x:hidden;
+  overflow:hidden;
 }
 
 h1 {
@@ -30,7 +30,7 @@ h1 {
     line-height:5%;
     height: 10px;
     border: 2px;
-    left:380px;
+    left:500px;
     border-radius:12px;
     margin-left:100px;
     top:5px;
@@ -61,7 +61,7 @@ pre.sibling-element {
   padding:5px 25px 25px;
   border: 2px;
   margin-left:30px;
-  top:160px;
+  top:225px;
   font-weight:bolder;
   
   left:95px;
@@ -71,11 +71,12 @@ pre.sibling-element {
 .card{
   background-color:rgba(42, 115, 233, 0.967);
   background-color: #d3d7de;
-  background-color: #becee8;
+  background-color: #d1e7e4;
   margin:2%;
   width:250px;
   border-radius:25px;
   text-align:center;
+  height:500px;
  }
 
 .purseImage{
@@ -191,4 +192,7 @@ input[type=submit]:hover {
   top: 370px;
   left: 990px;
   visibility:hidden;
+}
+.avail, .edit, .delete, .seller{
+  background-color: #d3d7de;
 }
