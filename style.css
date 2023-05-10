@@ -6,7 +6,6 @@ body {
     justify-content: center;
     margin: 0 auto;
     height: 1000vh;
-    overflow-x:hidden;
     scroll-padding-bottom:2em;
     background-attachment:scroll;
 }
@@ -16,7 +15,6 @@ body {
  height:1500px;
  background-position:center;
  background-size:cover;
- 
 }
 
 html {
@@ -57,7 +55,6 @@ pre.sibling-element {
   flex-direction: row;
   flex-wrap:wrap;
   position:absolute;  
-  font-family:Arial, Helvetica, sans-serif;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   line-height: 16px;
   width:1560px;
@@ -79,11 +76,7 @@ pre.sibling-element {
   width:250px;
   border-radius:25px;
   text-align:center;
-}
-
-.card:hover {
-  transform: rotateX(7deg) translateY(-6px) scale(1.39);
-}
+ }
 
 .purseImage{
   width:100px;

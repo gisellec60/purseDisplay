@@ -12,9 +12,9 @@ function createPurseCard(purse) {
     content.className = "purse"
 
     let h4 = document.createElement("h4")
-    h4.textContent = `Brand: ${purse.brand}`
+    h4.textContent = `${purse.brand}`
     let p1 = document.createElement("p")
-    p1.textContent = `Style: ${purse.style}`
+    p1.textContent = `${purse.style}`
     let p2 = document.createElement("p")
     p2.textContent = `Color: ${purse.color}`
     let p3 = document.createElement("p")
@@ -60,7 +60,7 @@ function createPurseCard(purse) {
     purseImage.addEventListener("click", displayDesc)
    
 
-    content.append(h4, p1, p2, p3, p4, p5, butn1, butn2, butn3, butn4, email)
+    content.append(h4, p1,p3, p4, p5, butn1, butn2, butn3, butn4, email)
     card.append(purseImage, content)
     //add pusre to DOM
     document.querySelector("#square").appendChild(card)
@@ -133,9 +133,6 @@ document.getElementById("addPurseInfo").addEventListener("submit", (e) => {
     })
        
 } //createPurseCard
-// document.getElementById(`card-${purse.id}`).addEventListener("mouseover", mouseOver)
-// document.getElementById(`card-${purse.id}`).addEventListener("mouseout", mouseOut)
-
 document.getElementById("addPurseButn").addEventListener("click", (e) => {
     if (document.getElementById("addForm-Container").style.visibility === "visible") {
         document.getElementById("addForm-Container").style.visibility = "hidden"

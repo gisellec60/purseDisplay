@@ -95,54 +95,6 @@
       "condition": "new",
       "price": "3150",
       "email": "Miriam@outlook.com"
-    },
-    {
-      "id": 9,
-      "brand": "Valentino",
-      "style": "SMALL VSLING GRAINY CALFSKIN HANDBAG",
-      "color": "Light Blue",
-      "size": "small",
-      "img": "https://valentino-cdn.thron.com/delivery/public/image/valentino/8b133fc8-6b16-423b-b4a4-5ad7cf930688/ihqstx/std/2000x0/SMALL-VSLING-GRAINY-CALFSKIN-HANDBAG?quality=80&size=35&format=auto",
-      "desc": "Small Valentino Garavani VSLING grainy calfskin leather handbag with VLogo Signature closure. Equipped with an extendable shoulder strap, this accessory can be worn as a crossbody/shoulder bag, or carried in the hand using the handle. - Antique-brass-finish metal hardware - Magnetic closure with leather-covered logo - Leather shoulder strap with adjustable chain - Protective feet - Nappa lining - Interior: red zipper pocket - Dimensions: W22xH17xD9 cm / W8.7xH6.7xD3.5 in. - Made in Italy",
-      "condition": "new",
-      "price": "3250",
-      "email": "nancy@gmail.com"
-    },
-    {
-      "id": 10,
-      "brand": "Bvlgari",
-      "style": "SERPENTI FOREVER CHAIN WALLET",
-      "color": "green",
-      "size": "small",
-      "img": "https://media2.bulgari.com/f_auto,q_auto,c_pad,h_520,w_520/production/dw3c23e163/images/images/1361597.png",
-      "desc": "Serpenti Forever chain wallet in emerald green calf leather with black nappa leather interior. Captivating snakehead magnetic closure in light gold-plated brass, embellished with black and white agate enamel scales and green malachite eyes.",
-      "condition": "new",
-      "price": "2000",
-      "email": "george@gmail.com"
-    },
-    {
-      "id": 11,
-      "brand": "Hermes",
-      "style": "Birkin Handbag Bicolor Clemence with Palladium",
-      "color": "Bicolor- Sanguine/Blanc",
-      "size": "Medium",
-      "img": "https://cdn.shopify.com/s/files/1/0384/0161/products/204906-1_20Hermes_20Birkin_20Handbag_20Bicolor_20Clemence_20with_20Palladium_20Hardware_2030_2D_0003_508x508.jpg?v=1679082050",
-      "desc": "Hermes Color Bicolor- Sanguine/Blanc Exterior Material Leather Interior Material Leather Hardware Color Palladium Accessories Clochette Keys Lock Dust bag",
-      "condition": "Creasing, wear and scuffs on exterior and handles, cracking on flap opening corner wax edges. Bubbling and light wear in interior, scratches on hardware.",
-      "price": "11500",
-      "email": ""
-    },
-    {
-      "id": 12,
-      "brand": "Tiffany & Co",
-      "style": "Women's Micro Tote",
-      "color": "Black",
-      "size": "large",
-      "img": "https://media.tiffany.com/is/image/Tiffany/EcomItemL2/womens-micro-tote-63444871_997856_ED.jpg?&op_usm=2.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp",
-      "desc": "High-quality Italian leather and T-shaped accents define Tiffany leather designs. The sleek black color of this micro tote adds a sophisticated finishing touch to any look.  Black grain calfskin leather with custom metal hardware Size micro 3.4\"W x 7.9\"D x 11\"H Strap length 51\" Made in Italy Product number:63444863",
-      "condition": "new",
-      "price": "1350",
-      "email": "mary@gmail.com"
     }
   ]
 }
