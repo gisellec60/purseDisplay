@@ -26,7 +26,11 @@ function createPurseCard(purse) {
     let p6 = document.createElement("p")
     p6.id = `desc-${purse.id}`
     p6.textContent = `desc: ${purse.description}`
-    
+    let p7 = document.createElement("p")
+    p7.id = `msg-${purse.id}`
+    p7.className="message"
+    p7.textContent = "Click on picture for more informaton"
+
     let butn1 = document.createElement("button")
     butn1.className = "avail"
     butn1.id = `butn1-${purse.id}`
@@ -46,7 +50,7 @@ function createPurseCard(purse) {
     let butn4 = document.createElement("button")
     butn4.className = "seller"
     butn4.id = `butn4-${purse.id}`
-    butn4.textContent = "Seller"
+    butn4.textContent = "Contact"
 
     let email = document.createElement("a")
     email.id = `email-${purse.id}`
@@ -60,7 +64,7 @@ function createPurseCard(purse) {
     purseImage.addEventListener("click", displayDesc)
    
 
-    content.append(h4, p1,p3, p4, p5, butn1, butn2, butn3, butn4, email)
+    content.append(h4, p1,p3, p4, p5,butn1, butn2, butn3, butn4, email)
     card.append(purseImage, content)
     //add pusre to DOM
     document.querySelector("#square").appendChild(card)
@@ -98,7 +102,7 @@ document.getElementById("addPurseInfo").addEventListener("submit", (e) => {
     
     function contactSeller() {
         console.log(document.getElementById(`email-${purse.id}`))
-        window.location = `mailto:${purse.email}`
+        window.location = `mailto:${purse.email}?Subject=${purse.brand}: ${purse.style}`
         
     }
    

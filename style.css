@@ -196,3 +196,10 @@ input[type=submit]:hover {
 .avail, .edit, .delete, .seller{
   background-color: #d3d7de;
 }
+#text{
+  position:absolute;
+  top:200px;
+  left:660px;
+  font-weight: bold;
+}
+
