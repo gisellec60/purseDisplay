@@ -105,3 +105,10 @@ Currently the [Bagz Galore](https://gisellec60.github.io/purseDisplay/) is maint
 
 ## About the Author
 Giselle Smith is the author of [Bagz Galore](https://gisellec60.github.io/purseDisplay/) and is currenlty a student at [Flatiron School](https://flatironschool.com).
+
+## References
+Background image: https://www.dreamstime.com/
+Louis Vuitton Grace MM: https://us.louisvuitton.com/
+Louis Vuitton Grace Pm: https://us.louisvuitton.com/
+Bvlgari :https://www.bulgari.com/
+Arcadia: https://www.arcadiabags.com/
