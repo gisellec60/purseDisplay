@@ -11,7 +11,7 @@ The customer comes to [Bagz Galore](https://gisellec60.github.io/purseDisplay/) 
 
 There are four buttons on each card but the only buttons a customer will see are the **Available/Unavailable** and **Contact** buttons. The only button a customer will be able to access is the **Contact** button. The contact button opens an email client that populates with the email address of the seller and the purse information on the subject line.
 
-***Note***: No purchases can be made from the site at this time. The customer must contact the seller for purchase.  
+***Note***: Purchases can not be made from the site at this time. The customer must contact the seller for purchase.  
 
 ### *Administrator*
 The **admin** has full access to the website for administration purposes. The admin will be able to:
@@ -21,10 +21,7 @@ The **admin** has full access to the website for administration purposes. The ad
    - Contact Seller
    - Add purse(s) 
 
-***Note***: At this time a seller must contact the admin for any and all administration purposes to include:
-- Adding/Editing Purse Information
-- Marking purse unavailable
-- Deleting purses
+***Note***: Currently the seller must contact the admin for any and all administration 
 
 ## More about [Bagz Galore](https://gisellec60.github.io/purseDisplay/)
 The information for the purses is in Json format on a Json server with the data consisting of the following:
