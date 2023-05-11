@@ -9,7 +9,7 @@ Bagz Galore currently supports two classification of users, ***customer*** and *
 ### *Customer*
 The customer comes to [Bagz Galore](https://gisellec60.github.io/purseDisplay/) looking for a high-end purse and possibly a deal.  On the website are ***cards*** with information about high-end purses for sale. The Customer reads the cards and if they want more information they can click on the ***purse image*** and a description box pops up. The customer has the option of contacting the seller to get more information and/or purchase the product. 
 
-There are four buttons on each card but the only buttons a customer will see are the **Available/Unavailable** and **Contact** buttons. The only button a customer will be able to access is the **Contact** button.
+There are four buttons on each card but the only buttons a customer will see are the **Available/Unavailable** and **Contact** buttons. The only button a customer will be able to access is the **Contact** button. The contact button opens an email client that populates with the email address of the seller and the purse information on the subject line.
 
 ***Note***: No purchases can be made from the site at this time. The customer must contact the seller for purchase.  
 
@@ -107,8 +107,9 @@ Currently the [Bagz Galore](https://gisellec60.github.io/purseDisplay/) is maint
 Giselle Smith is the author of [Bagz Galore](https://gisellec60.github.io/purseDisplay/) and is currenlty a student at [Flatiron School](https://flatironschool.com).
 
 ## References
-Background image: https://www.dreamstime.com/
-Louis Vuitton Grace MM: https://us.louisvuitton.com/
-Louis Vuitton Grace Pm: https://us.louisvuitton.com/
-Bvlgari :https://www.bulgari.com/
-Arcadia: https://www.arcadiabags.com/
+- Background image: https://www.dreamstime.com/
+- Louis Vuitton Grace MM: https://us.louisvuitton.com/
+- Louis Vuitton Grace Pm: https://us.louisvuitton.com/
+- Bvlgari : https://www.bulgari.com/
+- Arcadia: https://www.arcadiabags.com/
+- Valentino: https://www.valentino.com/
