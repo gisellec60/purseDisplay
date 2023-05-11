@@ -26,7 +26,7 @@ h1 {
     position:absolute;
     text-shadow:4px 4px #AAAAAA;
     background-color: #cd8dc3;
-    font-size: 73px;
+    font-size: 83px;
     line-height:5%;
     height: 10px;
     border: 2px;
@@ -68,7 +68,7 @@ pre.sibling-element {
   margin-left:30px;
   top:250px;
   font-weight:bolder;
-  left: 260px;
+  left: 300px;
   visibility:visible;
  }
 
@@ -184,7 +184,7 @@ input[type=submit]:hover {
 #addPurseButn{
   background-color: #d3d7de;
   position: relative;
-  top: -870px;
+  top: -807px;
   left:910px;
   font-weight:bold;
 }
@@ -201,9 +201,10 @@ input[type=submit]:hover {
 }
 #text{
   position:absolute;
-  top:165px;
+  top:230px;
   left:805px;
   font-weight: bold;
+  font-size:large;
 }
 
 #text::before{
