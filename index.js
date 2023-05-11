@@ -73,7 +73,7 @@ function createPurseCard(purse) {
     purseImage.addEventListener("click", displayDesc)
    
 
-    content.append(h4, p1, p2, p3, p4, p5,butn1, butn2, butn3, butn4, email)
+    content.append(h4, p1, p3, p4, p5,butn1, butn2, butn3, butn4, email)
     card.append(purseImage, content)
     //add pusre to DOM
     document.querySelector("#square").appendChild(card)
