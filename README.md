@@ -1,13 +1,13 @@
 
 # Bagz Galore
 
-[Bagz Galore](https://git@github.com:gisellec60/purseDisplay) is a website that hosts new and used designer purses for sale by various sellers. The idea for [Bagz Galore](https://git@github.com:gisellec60/purseDisplay) came from [Poshmark](https://poshmark.com/) which is a website that hosts various new and used items for sale by different sellers. 
+[Bagz Galore](https://gisellec60.github.io/purseDisplay/) is a website that hosts new and used designer purses for sale by various sellers. The idea for [Bagz Galore](https://gisellec60.github.io/purseDisplay/) came from [Poshmark](https://poshmark.com/) which is a website that hosts various new and used items for sale by different sellers. 
 
 ## **Who are the Users?**
 Bagz Galore currently supports two classification of users, ***customer*** and ***administrator***.
 
 ### *Customer*
-The customer comes to [Bagz Galore](https://git@github.com:gisellec60/purseDisplay) looking for a high-end purse and possibly a deal.  On the website are ***cards*** with information about high-end purses for sale. The Customer reads the cards and if they want more information they can click on the ***purse image*** and a description box pops up. The customer has the option of contacting the seller to get more information and/or purchase the product. 
+The customer comes to [Bagz Galore](https://gisellec60.github.io/purseDisplay/) looking for a high-end purse and possibly a deal.  On the website are ***cards*** with information about high-end purses for sale. The Customer reads the cards and if they want more information they can click on the ***purse image*** and a description box pops up. The customer has the option of contacting the seller to get more information and/or purchase the product. 
 
 There are four buttons on each card but the only buttons a customer will see are the **Available/Unavailable** and **Contact** buttons. The only button a customer will be able to access is the **Contact** button.
 
@@ -26,7 +26,7 @@ The **admin** has full access to the website for administration purposes. The ad
 - Marking purse unavailable
 - Deleting purses
 
-## More about [Bagz Galore](https://git@github.com:gisellec60/purseDisplay)
+## More about [Bagz Galore](https://gisellec60.github.io/purseDisplay/)
 The information for the purses is in Json format on a Json server with the data consisting of the following:
    - brand 
    - style
@@ -101,7 +101,7 @@ The information on the cards is limited to the items below with the option of ge
 }
 ```
 ## What's Next?
-Currently the [Bagz Galore](https://git@github.com:gisellec60/purseDisplay) is maintained by the admin/author.  This means the admin/author will be the one maintaining the purse data.  As the website grows the task of the author maintaining the data will become more daunting. Therefore, there is a plan to allow the ***seller*** to act as admin for their items. The seller will be given a login which will give them acccess to their purses ***only***. 
+Currently the [Bagz Galore](https://gisellec60.github.io/purseDisplay/) is maintained by the admin/author.  This means the admin/author will be the one maintaining the purse data.  As the website grows the task of the author maintaining the data will become more daunting. Therefore, there is a plan to allow the ***seller*** to act as admin for their items. The seller will be given a login which will give them acccess to their purses ***only***. 
 
 ## About the Author
-Giselle Smith is the author of [Bagz Galore](https://git@github.com:gisellec60/purseDisplay) and is currenlty a student at [Flatiron School](https://flatironschool.com).
+Giselle Smith is the author of [Bagz Galore](https://gisellec60.github.io/purseDisplay/) and is currenlty a student at [Flatiron School](https://flatironschool.com).
