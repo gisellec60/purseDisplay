@@ -119,8 +119,7 @@ function createPurseCard(purse) {
     }
     //toggle between available and unavialble
     function toggleAvailable(e) {
-        console.log(purse.id)
-        if (e.target.innerText === "Available") {
+       if (e.target.innerText === "Available") {
             e.target.innerText = "Uavailable"
             document.getElementById(`butn2-${purse.id}`).disabled = true;
             document.getElementById(`butn3-${purse.id}`).disabled = true;
@@ -212,9 +211,8 @@ function getAllPurses() {
         .then(purseData => purseData.forEach(purse => createPurseCard(purse)))
 }
 
-//Get a particular card from server
+//Get a particular card from server for editing
 function getPurseObject(id) {
-    console.log("what is id",id)
     fetch(`http://localhost:3000/purseData/${id}`)
         .then(res => {
           if (res.ok) { console.log("GET request successful!!!") }
