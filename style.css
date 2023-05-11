@@ -164,7 +164,8 @@ input[type=submit]:hover {
 #displayDesc {
   position:absolute;
   background-color:rgb(67, 102, 158);
-  color:#d1e7e4;
+  background-color: #cd8dc3;
+  color:black;
   width:500px;
   height:200px;
   left:520px;
