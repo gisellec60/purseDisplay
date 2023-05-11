@@ -26,7 +26,7 @@ h1 {
     position:absolute;
     text-shadow:4px 4px #AAAAAA;
     background-color: #cd8dc3;
-    font-size: 83px;
+    font-size: 90px;
     line-height:5%;
     height: 10px;
     border: 2px;
@@ -185,7 +185,7 @@ input[type=submit]:hover {
   background-color: #d3d7de;
   position: relative;
   top: -807px;
-  left:910px;
+  left:930px;
   font-weight:bold;
 }
 
