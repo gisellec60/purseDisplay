@@ -59,18 +59,6 @@
       "condition": "New",
       "price": "5,500",
       "email": "hermesgirl@icloud.com"
-    },
-    {
-      "id": 13,
-      "brand": "",
-      "style": "",
-      "color": "",
-      "size": "",
-      "img": "https://i.pinimg.com/originals/55/ca/16/55ca165e0b056e10d30a1e8ab95fc86f.jpg",
-      "desc": "",
-      "condition": "",
-      "price": "",
-      "email": ""
     }
   ]
 }
