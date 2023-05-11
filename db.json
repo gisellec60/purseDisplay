@@ -47,6 +47,18 @@
       "condition": "Used: Very Good",
       "price": "430",
       "email": "nancy@gmail.com"
+    },
+    {
+      "id": 12,
+      "brand": "Brahmin",
+      "style": "STACY",
+      "color": "MuliColor",
+      "size": "Medium",
+      "img": "https://www.brahmin.com/dw/image/v2/AAWD_PRD/on/demandware.static/-/Sites-masterCatalog_brahmin/default/dw3d8b794a/images/hiRes/U19-1708--00811-1.jpg?sw=729&sfrm=jpg&q=70",
+      "desc": "DESIGN NOTES Featured in Acadia Melbourne, take a walk through a hand-drawn blooming forest, where you can spot jaguars and tigers through lush greenery. Made with genuine croc-embossed leather.  For tips and information on how to protect and maintain the quality of your handbag, please visit our Product Care Page.  Satchel 2-way zip top closure Rolled handles Back slide in pocket Adjustable crossbody strap Double kangaroo pockets & pen loops Interior zip pocket Key clip Handle 4\" Strap 25\"",
+      "condition": "New",
+      "price": "345",
+      "email": "hermesgirl@icloud.com"
     }
   ]
 }
