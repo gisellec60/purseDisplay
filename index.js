@@ -123,12 +123,10 @@ function createPurseCard(purse) {
             e.target.innerText = "Uavailable"
             document.getElementById(`butn2-${purse.id}`).disabled = true;
             document.getElementById(`butn3-${purse.id}`).disabled = true;
-            document.getElementById(`butn4-${purse.id}`).disabled = true;
         } else {
             e.target.innerText = "Available"
             document.getElementById(`butn2-${purse.id}`).disabled = false;
             document.getElementById(`butn3-${purse.id}`).disabled = false;
-            document.getElementById(`butn4-${purse.id}`).disabled = false;
         }
     }    
     //display description when purse image is clicked. 
