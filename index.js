@@ -146,11 +146,58 @@ function createPurseCard(purse) {
         document.getElementById("displayDesc").style.visibility = "hidden"
         document.getElementById("closeButn").style.visibility="hidden"
     })
-       
+
 } //createPurseCard
 //get all purses from server
 getAllPurses()
-// make add purse form visible
+// Toggle between Customer and Admin Views
+document.getElementById("admin").addEventListener("click", (e) => {
+    const avail = document.getElementsByClassName("avail")
+    const ebutn = document.getElementsByClassName("edit")
+    const debutn = document.getElementsByClassName("delete")
+    const addPurse = document.getElementById("addPurseButn")
+    //change view button 
+    if (e.target.innerHTML === "Customer") {
+        e.target.innerHTML = "Admin"
+        addPurse.style.visibility="visible"
+    }
+    else {
+        e.target.innerHTML = "Customer"
+        addPurse.style.visibility="hidden"
+    }
+    availButn(avail)
+    visButn(ebutn,debutn)
+})
+
+function availButn(avail) {
+    for (const element of avail) {
+        if (element.disabled === false){
+            element.disabled = true
+        }else {
+        element.disabled = false
+        }
+    }
+    return
+}
+
+function visButn(butn1, butn2) {
+    let butnArray=[butn1, butn2]
+    for (const item of butnArray){
+      for (const element of item) {
+           console.log("ths is element for butn1", element)  
+          if (element.style.visibility === "" || element.style.visibility === "visible") {
+              console.log("top here")
+              element.style.visibility = "hidden"
+              console.log(element.style.visibility)
+          } else {
+              console.log("bottom here")
+              element.style.visibility = "visible"
+              console.log(element.style.visibility)
+          }    }    
+    } 
+    return
+}
+
 document.getElementById("addPurseButn").addEventListener("click", (e) => {
     if (document.getElementById("addForm-Container").style.visibility === "visible") {
         document.getElementById("addForm-Container").style.visibility = "hidden"
