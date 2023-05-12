@@ -19,7 +19,7 @@ body {
 
 html {
   height : 100%;
-  overflow:visible;
+  overflow:hidden;
 }
 
 h1 {
@@ -198,14 +198,9 @@ input[type=submit]:hover {
 .avail, .edit, .delete, .seller{
   background-color: #d3d7de;
 }
-
-/* .edit, .delete, #addPurseButn {
-  visibility:visible;
-} */
-
 .avail:disabled {
   background: #999;
-  color: #555;
+  color: #343131;
   cursor: not-allowed;
 }
 
